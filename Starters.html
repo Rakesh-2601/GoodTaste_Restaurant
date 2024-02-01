@@ -1,0 +1,380 @@
+<!doctype html>
+<html>
+<head>
+<title>Starters</title>
+<meta charset="UTF-8">
+<meta name="veiwport" content="width=device-width",initial-scale="0.1">
+</head>
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+*{
+margin:0;
+padding:0;
+
+}
+#nav{
+padding:20px 0 20px 0;
+animation:slideRight 1s ease forwards;
+}
+
+#container{
+display:flex;
+justify-content:right;
+}
+li a{
+margin-right:30px;
+color:#00db2c;
+text-decoration:none;
+font-family:fantasy;
+letter-spacing:2px;
+font-size:large;
+margin-top:-4px;
+}
+li a:hover{
+    text-shadow:4px 4px 2px rgba(0,0,0,0.4),4px 4px 3px rgba(0,0,0,0.4);
+}
+.reserve{
+    color:yellow;
+    text-shadow:none;
+}
+.reserve:hover{
+    text-shadow:0 0 5px rgba(0,0,0,0.4),0 0 5px rgba(0,0,0,0.4);
+}
+#slogan{
+color:white;
+width:30%;
+margin:0 auto;
+padding:100px;
+text-transform:capitalize;
+font-family:georgia;
+word-spacing:5px;
+font-size:xx-large;
+font-weight:800;
+text-align:center;
+line-height:40px;
+text-shadow:0 0 20px #000;
+text-indent:10px;
+animation:slideLeft 1s ease forwards;
+}
+#highlite{
+color:#00db2c;
+text-shadow:none;
+}
+#highlite:hover{
+    text-shadow:0 0 10px white,0 0 10px white;
+}
+#order{
+text-align:center;
+margin-top:30px;
+animation:slideTop 3s ease forwards;
+}
+#order a{
+text-decoration:none;
+color:white;
+font-weight:100;
+font-size:15px;
+font-family:times new roman;
+border:1px solid #00db2c;
+padding:10px 30px 10px 30px;
+background-color: #00db2c;
+border-radius:20px;
+}
+#order a:hover{
+    box-shadow:0 0 15px #00bd2c,0 0 15px #00bd2c;
+}
+#heading{
+font-family:georgia;
+font-size:50px;
+font-weight:900;
+text-align:center;
+color:#00db2c;
+text-shadow:0 0 1px black;
+margin-top:0px;
+}
+.heading2{
+text-align:center;
+font-family:sans-serif;
+font-weight:900;
+color:blue;
+}
+img{
+background-position:center;
+background-size:cover;
+}
+#card{
+display:inline-block;
+width:300px;
+height:500px;
+line-height:20px;
+border-right:1px solid #ddd;
+border-bottom:1px solid #ddd;
+margin:20px 0 20px 10px;
+background:linear-gradient(to bottom,silver,white);
+padding:30px 0 30px 0;
+overflow:auto;
+transition:all 0.50s ease-in-out;
+}
+#card:hover{
+box-shadow:5px 5px 5px rgba(0,0,0,0.4);
+}
+#img{
+display:flex;
+justify-content:center;
+padding-bottom:20px;
+transition:all 1s ease-in-out;
+}
+#img:hover{
+transform:scale(1.1);
+}
+#head{
+text-align:center;
+font-weight:600;
+margin:0 0 20px 0;
+}
+#ingredient{
+text-indent:10px;
+text-align:justify;
+padding: 5px 25px 20px 25px;
+line-height:25px;
+text-transform:capitalize;
+}
+@keyframes slideRight{
+    0%{
+        transform:translateX(-100px);
+        opacity:0.5;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform:translateX(100px);
+        opacity:0;
+    }
+    
+    100%{
+        transform:translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes slideTop{
+    0%{
+       transform:translateY(100px);
+        opacity:0;
+    }
+    50%{
+        transform:translateY(50px);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity:1;
+    }
+}
+</style>
+<body>
+<div id="intro" style="background-image:url('https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); border-bottom:1px solid #000;padding-bottom:200px;background-position:center;background-size:cover;background-attachment:fixed; height:450px;">
+<!---Nav Starts--->
+<nav id="nav" style>
+<ul id="container" style="list-style-type:none;">
+<li><a href="Good Taste Restaurant.html"  class="home" title="Home">Home</a></li>
+<li><a href="Menupage.html"  class="salads" title="Salads">Salads</a></li>
+<li><a href="#heading"  class="starters" title="Starters">Starters</a></li>
+<li><a href="Main course.html"  class="maincourse" title="Main course">Main Course</a></li>
+<li><a href="Beverages.html" class="beverages"title="Beverages">Beverages</a></li>
+<li><a href="Desserts.html" class="desserts" title="Desserts">Desserts</a></li>
+<li><a href="Reserve.html" class="reserve"  title="Reserve a table">Reserve</a></li>
+</ul>
+</nav>
+<!---Nav ends--->
+<div id="slogan"><span id="highlite">Good</span> Food is the Foundation of Genuine <span id="highlite">Happiness .</span>
+<div id="order"><a href="#heading">Explore Starters</a></div>
+</div>
+</div>
+<h1 id="heading">Starters</h1>
+<h2 class="heading2" >Veg-Starters</h2>
+<div id="card">
+<div id="img"><img src="Paneer_Tikka-.png" width="300px" height="250px"></div>
+<br>
+<p id="head">Panner Tikka</p>
+<div id="ingredient">Paneer, Tomato, onion, capsicum, cumin seeds, coriander seeds, brown cardamom, green cardamom, cloves, black pepper, star anise, shahee zeera, ginger-garlic paste, turmeric powder, red chilli powder, coriander powder, Salt, kashmiri chilli powder, refined oil, lime, dry mango powder, chaat masala, green chilli, curd, garam masala, coriander leaves, choppedmint leaves</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="veg_spring_roll-.png" width="300px" height="200px"></div>
+<br>
+<p id="head">Vegetable Spring Roll</p>
+<div id="ingredient">shredded cabbage, shredded carrot, spring onion, garlic, soy sauce, hot chilli sauce, white pepper, ground, cornflour, white vinegar, oil.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Homemade-Mozzarella-Sticks.png" width="200px" height="250px"></div>
+<br>
+<p id="head">Fried Mozzarella Sticks</p>
+<div id="ingredient">Italian seasoned bread crumbs, garlic salt, all-purpose flour, cornstarch, oil for frying, mozzarella cheese sticks.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Mushroom_rolls-.png" width="300px" height="200px"></div>
+<br>
+<p id="head">Mushroom Roll</p>
+<div id="ingredient">Romaine Lettuce, Cucumbers, Tomatoes, Peppers, Onions, Olives & Cheese Strawberry Salad 8.95 Spring Mix, Strawberries, Goat Cheese, and Walnuts With Raspberry Vinaigrette.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="panner_rolls.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Paneer rolls</p>
+<div id="ingredient">tortillas, teaspoon powdered red chilli, cumin seeds, coriander leaves, sunflower oil, fennel seeds, grated paneer, powdered garam masala powder, powdered curry powder, salt, garlic, chopped carrot, chopped cucumber, chopped green chilli, chopped capsicum, chopped onion, chopped tomato.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="big_cheesy_maggie_rolls-.png" width="200px" height="250px"></div>
+<br>
+<p id="head">Cheesy Maggie Roll</p>
+<div id="ingredient">Grated Cheese, Maggi Noodles, Maggi Noodles Masala, Chopped Capsicum, Dry Red Chilly Flakes, All Purpose Flour, Bread slices, Melted butter for greasing.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+
+<div id="card">
+<div id="img"><img src="Veg_momos-.png" width="250px" height="300px"></div>
+<br>
+<p id="head">Veg Momo's</p>
+<div id="ingredient">maida / plain flour, salt, water, oil, garlic, ginger, chilli, spring onion, carrot, cabbage, pepper, salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+
+<div id="card">
+<div id="img"><img src="Panner_momos-.png" width="200px" height="250px"></div>
+<br>
+<p id="head">Panner momo's</p>
+<div id="ingredient">maida / plain flour, salt, oil, water, garlic, ginger, chilli, spring onion, onion, cabbage, capsicum, paneer / cottage cheese, pepper, salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+
+<div id="card">
+<div id="img"><img src="Corn-Cheese-Balls-.png" width="180px" height="180px"></div>
+<br>
+<p id="head">Cheese Corn Balls</p>
+<div id="ingredient">potato boiled & mashed, onion, capsicum, finely, ginger garlic paste, chilli, coriander, chilli flakes, pepper powder, cumin powder, garam masala, mozzarella cheese, bread crumbs, salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Baby-Corn-Manchurian-.png" width="200px" height="200px"></div>
+<br>
+<p id="head">Chilli Baby Corn</p>
+<div id="ingredient">baby corn,  water, maida / plain flour, corn flour, kashmiri red chilli powder, pepper, ginger paste, salt, oil for frying.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+
+
+
+<div id="card">
+<div id="img"><img src="french-fries-.png" width="300px" height="200px"></div>
+<br>
+<p id="head">French fries</p>
+<div id="ingredient">potatoes , Salt to taste, Oil for deep-frying, chilli powder, coriander.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Cauliflower-Manchurian.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Gobi Manchurian</p>
+<div id="ingredient">florets gobi / cauliflower, water, maida / plain flour, cup corn flour, kashmiri red chilli powder, ginger garlic paste, salt, oil, garlic, ginger, green chilli, onion, spring onion, capsicum, tomato sauce, chilli sauce, vinegar, soy sauce, pepper, salt, corn flour.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<h2 class="heading2" style="color:red;">Non-Veg Starters</h2>
+<div id="card">
+<div id="img"><img src="veganpopcornchicken-r.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Chicken popcorn</p>
+<div id="ingredient">flour, garlic powder, salt, ground black pepper, eggs, lemon juice, oil, skinless, boneless chicken breasts.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Chicken-Kathi-Roll.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Chicken kathi roll</p>
+<div id="ingredient">Refined Flour, Boneless Chicken, Ginger, Garlic, cloves, Green chillies, Salt to taste, Cumin powder, Chaat masala, Onions, Carrot, Oil, Green chutney, Fresh coriander leaves.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="fish-cake.png" width="200px" height="200px"></div>
+<br>
+<p id="head">Fish cakes</p>
+<div id="ingredient">Fish, breadcrumbs,Green onions, Eggs, Lemon juice, coriander leaves, Oil, seasonings.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Butter-Chicken-Meatballs.png" width="250px" height="300px"></div>
+<br>
+<p id="head">Butter chicken meatballs</p>
+<div id="ingredient">Ground chicken, Egg, Panko Bread crumbs, Kosher Salt and Pepper, Olive Oil, Yellow Onion, Garlic, Garam, Masala, Curry Powder, Turmeric, Cayenne Pepper, Tomato Paste, Coconut Milk, Greek Yogurt, Unsalted Butter.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="ChickenShawarma.png" width="150px" height="200px"></div>
+<br>
+<p id="head">Chicken shawarma</p>
+<div id="ingredient">Chicken breasts, Coriander Powder, Red Chilli powder, Cumin powder, Black pepper powder, Turmeric powder, Ginger Garlic Paste, Olive Oil
+Salt, Whole Wheat Flour, Active dry yeast, Milk, Sugar, Cucumber, Carrot, Tomato , Chilli vinegar.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="chinese-chilli-chicken.png" width="300px" height="200px"></div>
+<br>
+<p id="head">Dragon chilli chicken </p>
+<div id="ingredient">Boneless Chicken Breast, Spring Onion, Dark Soy Sauce, Chilli garlic paste, Egg, All Purpose Flour, Corn FlourPepper, Oil, Dry Red Chilli, Cashews, Onion sliced thinly, Capsicum, Ginger Garlic Paste, Chilli garlic paste, Dark Soy sauce, Tomato Ketchup, Salt, Sugar.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="chicken_roll.png" width="200px" height="250px"></div>
+<br>
+<p id="head">Chicken rolls</p>
+<div id="ingredient">chicken, tomato, red chilli powder, vegetable oil, cucumber, coriander leaves, sliced onion, green chilli, garam masala powder, lemon, tomato ketchup, green chilli sauce
+coriander powder, powdered turmeric, powdered black pepper, garlic paste, cumin powder, low fat yoghurt, ginger paste, salt, vegetable oil.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Chicken-Momos.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Chicken momos</p>
+<div id="ingredient">Chicken, Refined flour, Salt to taste, Spring onions with greens, Ginger, Green chillies, Garlic, cloves, Soy sauce.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="spicy-chettinad-pepper-chicken.png" width="200px" height="250px"></div>
+<br>
+<p id="head">Spicy Chettinad Chicken</p>
+<div id="ingredient">Chicken , Garlic, Ginger, Turmeric powder, Lemon, Onion, Tomato, Curry leaves, Cumin powder, Fennel Powder, Coriander Powder, Black pepper powder, Salt, Oil, Water, Coriander Leaves.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="shrip_popcorn.png" width="300px" height="250px"></div>
+<br>
+<p id="head">Prawn popcorn</p>
+<div id="ingredient">Prawns, Oil, Garlic, Ginger, Egg, Red chilli flakes, Black pepper powder, soy sauce, Vinegar, lemon, Salt
+Spring onion greens diagonally sliced 1 stalk, Cornstarch.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="fish-fingers.png" width="300px" height="300px"></div>
+<br>
+<p id="head">Fish Fingers</p>
+<div id="ingredient">fish fillets, breadcrumb, all purpose flour, mayonnaise, lemon wedges, refined oil, parmesan cheese, black pepper, egg, tartare sauce, parsley.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Broasted-Chicken.png" width="250px" height="200px"></div>
+<br>
+<p id="head">Broasted Chicken</p>
+<div id="ingredient">Chicken with skin and bones, Salt, Black Pepper, Lemon Juice or vinegar, All Purpose Flour, Cornflour, Garlic powder, Dried Parsley, Dried Oregano, Dried Basil, Salt to taste, Black Pepper, Chilli Powder, Egg, Water.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+
+<div style="text-align:center;margin:20px 0 30px 0;"><a href="#nav" style="border:1px solid black;background-color:blue;color:white;border-radius:15px;padding:10px;text-decoration:none;">Back Top &uarr;</a></div>
+
+</body>
+</html>
