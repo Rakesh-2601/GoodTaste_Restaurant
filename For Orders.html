@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+    <head>
+        <title>For Orders</title>
+        <meta charset="UTF-8">
+        <meta name="veiwport" content="width=device-width",initial-scale="0.1">
+    </head>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@2.0.1/dist/css/multi-select-tag.css">
+    <style>
+*{
+    margin:0;
+    padding:0;
+}
+#nav{
+    padding:20px 0 30px 0;
+    animation:slideRight 1s ease forwards;
+}
+#container{
+    display:flex;
+    justify-content:right;
+}
+li a{
+    margin-right:30px;
+    background:linear-gradient(to right,aqua,blue,navy);
+    background-clip:text;
+    color:transparent;
+    text-decoration:none;
+    font-family:fantasy;
+    letter-spacing:2px;
+    font-size:large;
+}
+li a:hover{
+    text-shadow:0 0 1px #0ef;
+}
+.reserve{
+    color:yellow;
+    text-shadow:none;
+}
+.reserve:hover{
+    text-shadow:0 0 3px yellow,0 0 3px yellow;
+}
+.name{
+    text-align:center;
+    font-family:georgia;
+    font-weight:600;
+    font-size:45px;
+    padding-top:20px;
+    background:linear-gradient(to right,yellow,gold);
+    color:transparent;
+    background-clip:text;
+    text-shadow: 0 0 30px yellow;
+}
+.name:hover{
+    text-shadow: 0 0 30px yellow,0 0 30px yellow;;
+}
+.name2{
+    text-align:right;
+    font-family:sans-serif;
+    font-weight:600;
+    color:orangered;
+    letter-spacing:2px;
+}
+.name2:hover{
+    text-shadow:0 0 3px red,0 0 3px red;
+}
+select option{
+    text-align:center;
+    width:100%;
+}
+form{
+    border-top:2px solid lightgreen;
+    border-right:2px solid lightgreen;
+    border-bottom:2px solid aqua;
+    border-left:2px solid aqua;
+    backdrop-filter:blur(2px);
+    background-color:rgba(225,225,225,0.1);
+    width:35%;
+    margin:0 auto;
+    overflow:auto;
+    padding:30px;
+    word-wrap:break-word;
+    border-radius:20px;
+    animation:slideLeft 1s ease forwards;
+
+}
+form:hover{
+    box-shadow:0px 0px 10px whitesmoke,0px 0px 10px whitesmoke;
+}
+label{
+    color:#fff;
+}
+.star{
+    color:orangered;
+}
+input{
+    width:100%;
+    padding:10px;
+    color:red;
+    text-transform:capitalize;
+}
+.city,.state,.pincode{
+    display:inline-flex;
+    justify-content:space-evenly;
+    flex-direction:row;
+    width:27%;
+
+}
+#delivery,#pickup{
+    width:10%;
+    border:1px solid red;
+   text-align:center;
+}
+.btn{
+    text-align:center;
+}
+.order{
+    text-align:center;
+    background-color:#00db2c;
+    padding:5px 30px 5px 30px;
+    border-radius:20px;
+    border:2px solid #00db2c;
+    color:#fff;
+    animation:slideTop 3s ease forwards;
+}
+.order:hover{
+    box-shadow:0 0 15px #00bd2c,0 0 15px #00bd2c;
+}
+@keyframes slideRight{
+    0%{
+        transform:translateX(-100px);
+        opacity:0.5;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform:translateX(100px);
+        opacity:0;
+    }
+    
+    100%{
+        transform:translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes slideTop{
+    0%{
+       transform:translateY(10px);
+        opacity:0;
+    }
+    50%{
+        transform:translateY(5px);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity:1;
+    }
+}
+</style>
+<body style="background-color:#ddd;background-image:url('For Orders Bg.jpg');background-position:center;background-size:cover;background-attachment:fixed;">
+<div id="orders">
+<!---Nav Starts--->
+<nav id="nav" style>
+<ul id="container" style="list-style-type:none;">
+<li><a href="Good Taste Restaurant.html" title="Home">Home</a></li>
+<li><a href="Menupage.html" title="Our Food Menu">Menu</a></li>
+<li><a href="About Us.html" title="About Us">About Us</a></li>
+<li><a href="Contact Us.html" title="Contact Us">Contact</a></li>
+<li><a href="Reserve.html" class="reserve" title="Reserve a table">Reserve</a></li>
+</ul>
+</nav>
+<!---Nav ends--->
+<form>
+<object data="Good Taste.png" width="100px" height="100px" style="float:left;"></object><div class="name">Good Taste</div><br><div class="name2">Restaurant</div><br><br>
+
+<label for="Name">Name <span class="star">*</span></label><br><br>
+<input type="text" placeholder="Name" required autofocus maxlength="15"><br><br>
+
+<label for="Address">Address <span class="star">*</span></label><br><br>
+<input type="text" placeholder="Address" required maxlenght="50"><br><br>
+
+<input type="text" placeholder="City" required maxlenght="15" class="city" required>
+<input type="text" placeholder="State" required maxlenght="15" class="state" required>
+<input type="number" placeholder="Pincode" required maxlenght="15" class="pincode" required><br><br>
+
+<label for="MobileNumber">MoblieNumber <span class="star">*</span></label><br><br>
+<input type="Number" placeholder="MoblieNumber" required minlength="10" maxlength="10"><br><br>
+
+<label for="Order Type">Order Type <span class="star">*</span></label><br><br>
+
+<label for="delivery">Delivery</label>
+<input type="radio" name="ordertype" id="delivery" style="margin-right:40px;" required>
+
+<label for="pickup">Pick-Up</label>
+<input type="radio" name="ordertype" id="pickup" required><br><br>
+
+<label for="orders">Your Orders <span class="star">*</span></label><br><br>
+<select id="foods" multiple required>
+<option class="options">Stawberry Apple Salad</option>
+<option class="options">Cucumber Onion Salad</option>
+<option class="options">Beet Salad</option>
+<option class="options">Radish,Celery & Cucumber Salad</option>
+<option class="options">Rainbow Chopped Salad</option>
+<option class="options">Chickpea Tuna Salad</option>
+<option class="options">Mediterranean Tuna-Spinach Salad</option>
+<option class="options">Sesame Kohlrabi & Chicken Salad</option>
+<option class="options">Paneer Tikka</option>
+<option class="options">Vegetable Spring Roll</option>
+<option class="options">Fried Mozzarella Sticks</option>
+<option class="options">Cheesy Maggie Roll</option>
+<option class="options">Cheese Corn Balls</option>
+<option class="options">Chilli Baby Corn</option>
+<option class="options">Gobi Manchurian</option>
+<option class="options">Paneer rolls</option>
+<option class="options">Panner momo's</option>
+<option class="options">French fries</option>
+<option class="options">Chicken popcorn</option>
+<option class="options">Chicken kathi roll</option>
+<option class="options">Mutton sukha</option>
+<option class="options">Fish cakes</option>
+<option class="options">Spicy Chettinad Chicken</option>
+<option class="options">Nethili Fish fry</option>
+<option class="options">Dragon chilli chicken</option>
+<option class="options">Butter chicken meatballs</option>
+<option class="options">Chicken rolls</option>
+<option class="options">Chicken momos</option>
+<option class="options">Chicken shawarma</option>
+<option class="options">Dragon chilli chicken</option>
+<option class="options">Chicken rolls</option>
+<option class="options">Chicken momos</option>
+<option class="options">Spicy Chettinad Chicken</option>
+<option class="options">Prawn popcorn</option>
+<option class="options">Fish Fingers</option>
+<option class="options">Broasted Chicken</option>
+<option class="options">Veg-fried rice</option>
+<option class="options">Panner Fried Rice</option>
+<option class="options">Veg-Manchurian Fried Rice</option>
+<option class="options">Veg-Schezwan Rice</option>
+<option class="options">Veg-Schezwan Noodles</option>
+<option class="options">Veg-Manchurian Noodles</option>
+<option class="options">Veg-Briyani</option>
+<option class="options">Butter Naan</option>
+<option class="options">Garlic Butter Naan</option>
+<option class="options">Parotta</option>
+<option class="options">Sambar Rice</option>
+<option class="options">Curd Rice</option>
+<option class="options">Paneer Butter Masala</option>
+<option class="options">Palak Paneer</option>
+<option class="options">White Kurma</option>
+<option class="options">Chicken fried rice</option>
+<option class="options">Chicken Schezwan fried rice</option>
+<option class="options">Chicken noodles</option>
+<option class="options">Chicken schezwan noodles</option>
+<option class="options">Chicken dum biryani</option>
+<option class="options">Mutton dum biryani</option>
+<option class="options">Shrimp dum briyani</option>
+<option class="options">Egg dum briyani</option>
+<option class="options">Fish special meals</option>
+<option class="options">Mutton special meals</option>
+<option class="options">Chettinad Chicken gravy</option>
+<option class="options">Chicken Curry</option>
+<option class="options">Mutton Curry</option>
+<option class="options">Butter Chicken</option>
+<option class="options">Chicken Tikka Masala</option>
+<option class="options">Malabar Chicken</option>
+<option class="options">Shirley Temple Drink</option>
+<option class="options">Ginger Orange Mocktails</option>
+<option class="options">Strawberry Basil Sweet Tea</option>
+<option class="options">Lemonade Iced Tea</option>
+<option class="options">Watermelon-Basil Sweet Tea</option>
+<option class="options">Minty Lemonade Iced Tea</option>
+<option class="options">Lemon-Basil Spritzer</option>
+<option class="options">Strawberry-Mint Tea</option>
+<option class="options">Mint Mojito</option>
+<option class="options">Blue Mojito</option>
+<option class="options">Cold Coffee</option>
+<option class="options">Cappuccino</option>
+<option class="options">Gulab Jamun</option>
+<option class="options">Halwa</option>
+<option class="options">Rasa Malai</option>
+<option class="options">Rasagulla</option>
+<option class="options">kulfi</option>
+<option class="options">Fruit Faluda</option>
+<option class="options">Dry Fruit Faluda</option>
+<option class="options">Choco-Dream Cake</option>
+<option class="options">Milk Cake</option>
+<option class="options">Icecream Cake</option>
+<option class="options">Red Velvet Cake</option>
+<option class="options">Cheese Cake</option>
+
+</select><br><br>
+<label for="Suggestions" >Special Instructions</label><br><br>
+<textarea placeholder="Special Instructions" style="width:100%;height:150px;" ></textarea><br><br>
+
+<div class="btn"><button type="submit" title="Click to Order" onclick="alert('Your Order Is placed. Make sure to Attend Our call. Thankyou for Choosing Us.')" required class="order">Order</button></div>
+</form>
+</div>
+
+<div style="text-align:center;margin:20px 0 30px 0;"><a href="#nav"  style="border:1px solid black;background-color:blue;color:white;border-radius:15px;padding:10px;text-decoration:none;">Back Top &uarr;</a></div>
+
+
+<script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@2.0.1/dist/js/multi-select-tag.js"></script>
+
+<script>
+    new MultiSelectTag('foods')  // id
+</script>
+
+</body>
+</html>
