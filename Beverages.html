@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+<head>
+<title>Beverages</title>
+<meta charset="UTF-8">
+<meta name="veiwport" content="width=device-width",initial-scale="0.1">
+</head>
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+*{
+margin:0;
+padding:0;
+}
+#nav{
+padding:20px 0 20px 0;
+animation:slideRight 1s ease forwards;
+}
+#container{
+display:flex;
+justify-content:right;
+}
+li a{
+margin-right:30px;
+background:linear-gradient(to right,rgb(83, 244, 180) 5%,pink 70%,aqua 95%,orange 95% );
+background-clip:text;
+color:transparent;
+text-decoration:none;
+font-family:fantasy;
+letter-spacing:2px;
+font-size:large;
+}
+.reserve{
+    color:yellow;
+    text-shadow:none;
+}
+.reserve:hover{
+    text-shadow:0 0 3px yellow,0 0 3px yellow;
+}
+#slogan{
+color:white;
+width:30%;
+margin:0 auto;
+padding:100px;
+text-transform:capitalize;
+font-family:georgia;
+word-spacing:5px;
+font-size:xx-large;
+font-weight:800;
+text-align:center;
+line-height:40px;
+text-shadow:0 0 20px #000;
+text-indent:10px;
+animation:slideLeft 1s ease forwards;
+}
+#highlite{
+color:#00db2c;
+text-shadow:none;
+}
+#highlite:hover{
+    text-shadow:0 0 10px white,0 0 10px white;
+}
+#order{
+text-align:center;
+margin-top:30px;
+animation:slideTop 3s ease forwards;
+
+}
+#order a{
+text-decoration:none;
+color:white;
+font-weight:100;
+font-size:15px;
+font-family:times new roman;
+border:1px solid #00db2c;
+padding:10px 30px 10px 30px;
+background-color: #00db2c;
+border-radius:20px;
+}
+#order a:hover{
+    box-shadow:0 0 15px #00bd2c,0 0 15px #00bd2c;
+}
+#heading{
+font-family:georgia;
+font-size:50px;
+font-weight:900;
+text-align:center;
+background:linear-gradient(to right,magenta,aqua);
+background-clip:text;
+color:transparent;
+margin-top:0px;
+}
+.heading2{
+text-align:center;
+font-family:sans-serif;
+font-weight:900;
+color:#00db2c;
+}
+img{
+background-position:center;
+background-size:cover;
+}
+#card{
+display:inline-block;
+width:300px;
+height:500px;
+line-height:20px;
+border-right:1px solid #ddd;
+border-bottom:1px solid #ddd;
+margin:20px 0 20px 10px;
+background:linear-gradient(to bottom,silver,white);
+padding:30px 0 30px 0;
+overflow:auto;
+transition:all 0.50s ease-in-out;
+}
+#card:hover{
+box-shadow:5px 5px 5px rgba(0,0,0,0.4);
+}
+#img{
+display:flex;
+justify-content:center;
+padding-bottom:20px;
+transition:all 0.50s ease-in-out;
+
+}
+#img:hover{
+transform:scale(1.1);
+}
+#head{
+text-align:center;
+font-weight:600;
+margin:0 0 20px 0;
+}
+#ingredient{
+text-indent:10px;
+text-align:justify;
+padding: 5px 25px 20px 25px;
+line-height:25px;
+text-transform:capitalize;
+}
+@keyframes slideRight{
+    0%{
+        transform:translateX(-100px);
+        opacity:0.5;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform:translateX(100px);
+        opacity:0;
+    }
+    
+    100%{
+        transform:translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes slideTop{
+    0%{
+       transform:translateY(100px);
+        opacity:0;
+    }
+    50%{
+        transform:translateY(50px);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity:1;
+    }
+}
+</style>
+<body>
+<div id="intro" style="background-image:url('Beverages bg.jpg'); border-bottom:1px solid #000;padding-bottom:200px;background-position:center;background-size:cover;background-attachment:fixed; height:450px;">
+<!---Nav Starts--->
+<nav id="nav" style>
+<ul id="container" style="list-style-type:none;">
+<li><a href="Good Taste Restaurant.html" title="Home">Home</a></li>
+<li><a href="Menupage.html" title="Salads">Salads</a></li>
+<li><a href="Starters.html" title="Starters">Starters</a></li>
+<li><a href="Main course.html" title="Main course">Main Course</a></li>
+<li><a href="#heading" title="Beverages">Beverages</a></li>
+<li><a href="Desserts.html" title="Desserts">Desserts</a></li>
+<li><a href="Reserve.html" class="reserve" title="Reserve a table">Reserve</a></li>
+</ul>
+</nav>
+<!---Nav ends--->
+<div id="slogan"><span id="highlite"> Shake</span> Things Up a <span id="highlite">Little </span>Bit.
+<div id="order"><a href="#heading">Explore Beverages</a></div>
+</div>
+</div>
+<h1 id="heading">Beverages</h1>
+<div id="card">
+<div id="img"><img src="Shirley_temple_drink.png" width="150px" height="280px"></div>
+<br>
+<p id="head">Shirley Temple Drink</p>
+<div id="ingredient">Ginger ale or lemon-lime soda, Grenadine syrup, Maraschino cherries, Icecube.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Orange_Ginger_Mocktail.png" width="150px" height="250px"></div>
+<br>
+<p id="head">Ginger Orange Mocktails</p>
+<div id="ingredient">Ginger ale, orange juice
+Mint leaves, Ice cubes.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Stawberry_Basil_Sweet_Tea.png" width="180px" height="300px"></div>
+<br>
+<p id="head">Strawberry Basil Sweet Tea</p>
+<div id="ingredient">Milk, Tea powder Sugar, Strawberries,Basil leaves
+Ice cubes.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Lemon_Iced_Tea.png" width="200px" height="300px"></div>
+<br>
+<p id="head">Lemonade Iced Tea</p>
+<div id="ingredient">Lemon juice, Iced tea, Ice cube.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Watermelon-Green-Tea.png" width="150px" height="300px"></div>
+<br>
+<p id="head">Watermelon-Basil Sweet Tea</p>
+<div id="ingredient">Milk, Tea powder, sugar powder,Watermelon chunks,
+Basil leaves, Ice cubes.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Mint_Lemon_Tea.png" width="200px" height="250px"></div>
+<br>
+<p id="head">Minty Lemonade Iced Tea</p>
+<div id="ingredient">Lemonade, Iced tea, Mint leaves, Ice cube.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Lemon_Basil_Spritzer.png" width="150px" height="300px"></div>
+<br>
+<p id="head">Lemon-Basil Spritzer</p>
+<div id="ingredient">Lemon juice, Basil leaves, Club soda, Ice cube.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Strawberry-Iced-Tea.png" width="200px" height="300px"></div>
+<br>
+<p id="head">Strawberry-Mint Tea</p>
+<div id="ingredient">Strawberry tea, Mint leaves
+Strawberries, Icecubes.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Mint_Mojito.png" width="180px" height="300px"></div>
+<br>
+<p id="head">Mint Mojito</p>
+<div id="ingredient">Spirit, Mint leaves, Lime juice, flavour essence, Soda water, Ice cubes.
+</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="blue-mojito.png" width="200px" height="300px"></div>
+<br>
+<p id="head">Blue Mojito</p>
+<div id="ingredient">Spirit, Blue food Colour, Mint leaves, Lime,Soda water, Ice cube.
+
+</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Cold_Coffee.png" width="150px" height="250px"></div>
+<br>
+<p id="head">Cold Coffee</p>
+<div id="ingredient">Coffee powder, Boiled Milk, Sugar, Ice cubes.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Cappuccino.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Cappuccino</p>
+<div id="ingredient">Steamed milk, sugar, coffee decoction.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+
+<div style="text-align:center;margin:20px 0 30px 0;"><a href="#nav" style="border:1px solid black;background-color:blue;color:white;border-radius:15px;padding:10px;text-decoration:none;">Back Top &uarr;</a></div>
+
+</body>
+</html>
