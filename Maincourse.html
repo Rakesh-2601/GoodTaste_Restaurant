@@ -1,0 +1,426 @@
+<!doctype html>
+<html>
+<head>
+<title>Main Course</title>
+<meta charset="UTF-8">
+<meta name="veiwport" content="width=device-width",initial-scale="0.1">
+</head>
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+*{
+margin:0;
+padding:0;
+}
+#nav{
+padding:20px 0 20px 0;
+animation:slideRight 1s ease forwards;
+}
+#container{
+display:flex;
+justify-content:right;
+}
+li a{
+margin-right:30px;
+background:linear-gradient(to right,aqua,blue,navy);
+background-clip:text;
+color:transparent;
+text-decoration:none;
+font-family:fantasy;
+letter-spacing:2px;
+font-size:large;
+}
+.reserve{
+    color:yellow;
+    text-shadow:none;
+   
+}
+.reserve:hover{
+    text-shadow:0 0 3px yellow,0 0 3px yellow;
+}
+#slogan{
+color:white;
+width:30%;
+margin:0 auto;
+padding:100px;
+text-transform:capitalize;
+font-family:georgia;
+word-spacing:5px;
+font-size:xx-large;
+font-weight:800;
+text-align:center;
+line-height:40px;
+text-shadow:0 0 20px #000;
+text-indent:10px;
+animation:slideLeft 1s ease forwards;
+}
+#highlite{
+color:#00db2c;
+text-shadow:none;
+}
+#highlite:hover{
+    text-shadow:0 0 10px white,0 0 10px white;
+}
+#order{
+text-align:center;
+margin-top:30px;
+animation:slideTop 3s ease forwards;
+
+}
+#order a{
+text-decoration:none;
+color:white;
+font-weight:100;
+font-size:15px;
+font-family:times new roman;
+border:1px solid #00db2c;
+padding:10px 30px 10px 30px;
+background-color: #00db2c;
+border-radius:20px;
+}
+#order a:hover{
+    box-shadow:0 0 15px #00bd2c,0 0 15px #00bd2c;
+}
+#heading{
+font-family:georgia;
+font-size:50px;
+font-weight:900;
+text-align:center;
+color:gold;
+text-shadow:0 0 1px black;
+margin-top:0px;
+}
+.heading2{
+text-align:center;
+font-family:sans-serif;
+font-weight:900;
+color:#00db2c;
+}
+img{
+background-position:center;
+background-size:cover;
+}
+#card{
+display:inline-block;
+width:300px;
+height:500px;
+line-height:20px;
+border-right:1px solid #ddd;
+border-bottom:1px solid #ddd;
+margin:20px 0 20px 10px;
+background:linear-gradient(to bottom,silver,white);
+padding:30px 0 30px 0;
+overflow:auto;
+transition:all 0.50s ease-in-out;
+}
+#card:hover{
+box-shadow:5px 5px 5px rgba(0,0,0,0.4);
+}
+#img{
+display:flex;
+justify-content:center;
+padding-bottom:20px;
+transition:all 0.50s ease-in-out;
+}
+#img:hover{
+transform:scale(1.1);
+}
+#head{
+text-align:center;
+font-weight:600;
+margin:0 0 20px 0;
+}
+#ingredient{
+text-indent:10px;
+text-align:justify;
+padding: 5px 25px 20px 25px;
+line-height:25px;
+text-transform:capitalize;
+}
+@keyframes slideRight{
+    0%{
+        transform:translateX(-100px);
+        opacity:0.5;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform:translateX(100px);
+        opacity:0;
+    }
+    
+    100%{
+        transform:translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes slideTop{
+    0%{
+       transform:translateY(100px);
+        opacity:0;
+    }
+    50%{
+        transform:translateY(50px);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity:1;
+    }
+}
+</style>
+<body>
+<div id="intro" style="background-image:url('https://images.pexels.com/photos/11076090/pexels-photo-11076090.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); border-bottom:1px solid #000;padding-bottom:200px;background-position:center;background-size:cover;background-attachment:fixed; height:450px;">
+<!---Nav Starts--->
+<nav id="nav" style>
+<ul id="container" style="list-style-type:none;">
+<li><a href="Good Taste Restaurant.html" title="Home">Home</a></li>
+<li><a href="Menupage.html" title="Salads">Salads</a></li>
+<li><a href="Starters.html" title="Starters">Starters</a></li>
+<li><a href="#heading" title="Main course">Main Course</a></li>
+<li><a href="Beverages.html" title="Beverages">Beverages</a></li>
+<li><a href="Desserts.html" title="Desserts">Desserts</a></li>
+<li><a href="Reserve.html" class="reserve" title="Reserve a table">Reserve</a></li>
+</ul>
+</nav>
+<!---Nav ends--->
+<div id="slogan">A<span id="highlite"> Recipe</span> is a Story that end's with a  <span id="highlite">good </span>Meal.
+<div id="order"><a href="#heading">Explore Maincourse</a></div>
+</div>
+</div>
+<h1 id="heading">Main course</h1>
+<h2 class="heading2" >Veg-Maincourse</h2>
+<div id="card">
+<div id="img"><img src="veg-fried-rice.png" width="300px" height="250px"></div>
+<br>
+<p id="head">Veg-fried rice</p>
+<div id="ingredient">Refined oil, vegetables( carrot, beans,capsicum, green peas, cabbage, sweet corn), soya sauce, chilli sauce, garam masala, pepper powder, salt, coriander leaves</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Mushroom_rice.png" width="230px" height="250px"></div>
+<br>
+<p id="head">Mushroom Fried Rice</p>
+<div id="ingredient">Refined Oil, jeera, garlic, ginger,Onion, Mushrooms, soya sauce, Garam masala, Salt, Spring onions.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Panner_fried_rice.png" width="250px" height="200px"></div>
+<br>
+<p id="head">Panner Fried Rice</p>
+<div id="ingredient">Ghee, whole spices, jeera, ginger, garlic, green chilli, Onion, Capsicum, Sweet corns, fried paneer, Basmathi Rice, Pepper powder, Blacksalt, cummin seed powder, corriander leaf.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Veg_manchorian.png" width="200px" height="250px"></div>
+<br>
+<p id="head">Veg-Manchurian Fried Rice</p>
+<div id="ingredient">Refined Oil, ginger, garlic, green chillies, onions, cabbage, Chilli powder,cornflour, soya sauce, tomoto sauce, chilli sauce, vinegar, Basmathi Rice,Salt, Spring onions.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="veg-schezwan-fried-rice.png" width="300px" height="250px"></div>
+<br>
+<p id="head">Veg-Schezwan Rice</p>
+<div id="ingredient">Refined oil, ginger, garlic, green chillies, carrot, cabbage, capsicum, schezwan sauce, soya sauce, Basmathi rice, salt, Spring onion.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Veg_schezwan_noodles.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Veg-Schezwan Noodles</p>
+<div id="ingredient">Refined Oil, garlic, green chillies, Onion, carrot, cabbage, chilli powder, corrainder powder, pepper powder, Wheat Noodles, Schezwan Sauce, chilli sauce, Salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Dry_Veg_Manchurian.png" width="200px" height="200px"></div>
+<br>
+<p id="head">Veg-Manchurian Noodles</p>
+<div id="ingredient">Refined Oil, garlic, green chillies, onion, carrot, cabbage, capcicum, chilli powder, garam masala, cornflour, Wheat noodles, chilli sauce, tomoto sauce, salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Veg-Biryani.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Veg-Briyani</p>
+<div id="ingredient">Ghee, Whole spices, Onion, tomoto, green chillis, ginger garlic paste, mint leaves, corriander leaves, mixed vegetables, curd, biryani masala, chilli powder, garam masala, Basmathi rice, bread cubes, lemon, salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="butter_naan.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Butter Naan</p>
+<div id="ingredient">All-purpose flour, yogurt, butter, baking powder, baking soda.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Garlic-Naan.png" width="300px" height="250px"></div>
+<br>
+<p id="head">Garlic Butter Naan</p>
+<div id="ingredient">All-purpose flour, yogurt, butter, garlic, baking powder, baking soda.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Kerala-Parotta.png" width="200px" height="300px"></div>
+<br>
+<p id="head">Parotta</p>
+<div id="ingredient">All-purpose flour, milk, oil, salt, water.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="sambar-rice.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Sambar Rice</p>
+<div id="ingredient">Refined oil, Mustard seeds, curry leaves, dried chillie, mixed vegetables( small onion, tomoto,carrot, beans, green peas, brinjal, drumstick), toor dhal, normal ponni rice, sambar powder, tamarind, salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Curd-Rice.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Curd Rice</p>
+<div id="ingredient">Rice, yogurt, milk, grapes, pomageranate, (mustard seeds, urad dal, curry leaves).</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="paneer-butter-masala.png" width="300px" height="250px"></div>
+<br>
+<p id="head">Paneer Butter Masala</p>
+<div id="ingredient">Paneer, Tomato, onion, cumin seeds, coriander seeds, brown cardamom, green cardamom, cloves, black pepper, star anise,    red chilli powder, Salt, kashmiri chilli powder, refined oil, lime, choppedmint leaves</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="palak-paneer.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Palak Paneer</p>
+<div id="ingredient">Paneer, spinach, butter, green chilli, onions, tomatos, ginger garlic paste, salt, kasuri methi, cashewnuts, fresh cream, clovers, cardamoms.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="white-kurma.png" width="300px" height="250px"></div>
+<br>
+<p id="head">White Kurma</p>
+<div id="ingredient">grated coconut, roasted gram dal, cashew, chilli, cinnamon, cardamom, water, oil, cumin, bay leaf, onion, ginger paste, carrot, potato, beans, peas, salt, coriander, lemon juice.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<h2 class="heading2" style="color:red;">Non-Veg Maincourse</h2>
+<div id="card">
+<div id="img"><img src="Chicken-Fried-Rice.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Chicken fried rice</p>
+<div id="ingredient">Refined Oil, Garlic, ginger, green capcium, Vegetables (carrots, peas, corn), Soy sauce, Eggs, Cooked Basmathi Rice, Pepper powder, Garam masala, Salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Szechuan-Fried-Rice-.png" width="300px" height="250px"></div>
+<br>
+<p id="head">Chicken Schezwan fried rice</p>
+<div id="ingredient">Refined Oil, Garlic, green capcium, Vegetables (carrots, peas, corn), Soy sauce, Fried Chicken, Schezwan Sauce, Cooked Basmathi Rice, Pepper powder, Garam masala, Salt. </div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+
+<div id="card">
+<div id="img"><img src="Chicken_Noodles.png" width="300px" height="250px"></div>
+<br>
+<p id="head">Chicken noodles</p>
+<div id="ingredient">Refined Oil, garlic ,ginger, green capcium, Vegetables (carrots, peas, corn), Chicken , Soy sauce, Noodles, Garam masala, Salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="schezwan_chicken_noodles.png" width="300px" height="250px"></div>
+<br>
+<p id="head">Chicken schezwan noodles</p>
+<div id="ingredient">Refined Oil, garlic ,ginger, green capcium, Vegetables (carrots, peas, corn), Chicken , Soy sauce, Schezwan sauce, Wheat Noodles, Garam masala, Salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="chicken_briyani.png" width="300px" height="250px"></div>
+<br>
+<p id="head">Chicken dum biryani</p>
+<div id="ingredient">Ghee, Whole spices, Green chillies, Onions, ginger garlic paste, Tomatoes, mint, corrainder leaf,Biryani masala,  Chilli powder, Chicken masala, Curd, Chicken, Seerakasamba rice, salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Mutton_Dumb_Briyani.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Mutton dum biryani</p>
+<div id="ingredient">Ghee, Whole spices, Green chillies, Onions, ginger garlic paste, Tomatoes, mint, corrainder leaf,Biryani masala,  mutton masala,  Chilli powder, Curd, Mutton, Seerakasamba rice, salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="shrimp_Briyani.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Shrimp dum briyani</p>
+<div id="ingredient">Ghee, Whole spices, Green chillies, Onions, ginger garlic paste, Tomatoes, mint, corrainder leaf,Biryani masala,  Chilli powder, Garam masala, Curd, Shrimp, Basmathi Rice, Salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Egg_Briyani.png" width="250px" height="280px"></div>
+<br>
+<p id="head">Egg dum briyani</p>
+<div id="ingredient">Ghee, Whole spices, Green chillies, Onions, ginger garlic paste, Tomatoes, mint, corrainder leaf,Biryani masala,  Chilli powder, Curd, Basmathi rice, Boiled Eggs, salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Fish_Special_Meals.png" width="300px" height="250px"></div>
+<br>
+<p id="head">Fish special meals</p>
+<div id="ingredient">Fish,Rice,Curry,Vegetables.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="_mutton-curry.png" width="280px" height="280px"></div>
+<br>
+<p id="head">Mutton special meals</p>
+<div id="ingredient">Mutton,Rice,Curry,Vegetables.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="chettinad-chicken-curry.png" width="300px" height="250px"></div>
+<br>
+<p id="head">Chettinad Chicken gravy</p>
+<div id="ingredient">Groundnut oil, Mustard seeds, curry leaves, small onions,tomatoes, tumeric powder, chilli powder, chicken masala, Chicken, Coconut paste, Salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Chicken-Curry.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Chicken Curry</p>
+<div id="ingredient">Groundnut oil, Mustard seeds, curry leaves, small onions,tomatoes, tumeric powder, chilli powder, corriander masala, Chicken, Pepper powder, corriander leaf, Salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Mutton-gravy.png" width="250px" height="300px"></div>
+<br>
+<p id="head">Mutton Curry</p>
+<div id="ingredient">Coconut  oil, Mustard seeds, curry leaves, small onions,tomatoes, tumeric powder, chilli powder, Garam masala, Boiled mutton, Coconut and cashew paste, Salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Butter-Chicken.png" width="300px" height="250px"></div>
+<br>
+<p id="head">Butter Chicken</p>
+<div id="ingredient">Butter, Garlic, Mustard seeds, jeera, curry leaves,onions,tomatoes, chilli powder, chicken masala, Chicken, fresh cream, Salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Chicken_Tikka_Masala.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Chicken Tikka Masala</p>
+<div id="ingredient">Refined oil, Mustard seeds, curry leaves, onions,tomatoes, tumeric powder, chilli powder, Soya sauce, chilli sauce, Chicken masala, Chicken, Salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Malabar-Chicken-Curry.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Malabar Chicken</p>
+<div id="ingredient">Cocunut oil, Mustard seeds, whole spices, curry leaves, small onions,tomatoes, tumeric powder, chicken masala, Chicken, Coconut milk, Salt.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+
+<div style="text-align:center;margin:20px 0 30px 0;"><a href="#nav" style="border:1px solid black;background-color:blue;color:white;border-radius:15px;padding:10px;text-decoration:none;">Back Top &uarr;</a></div>
+
+</body>
+</html>
