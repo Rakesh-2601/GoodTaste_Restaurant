@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+<title>Desserts</title>
+<meta charset="UTF-8">
+<meta name="veiwport" content="width=device-width",initial-scale="0.1">
+</head>
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+*{
+margin:0;
+padding:0;
+}
+#nav{
+padding:20px 0 20px 0;
+animation:slideRight 1s ease forwards;
+}
+#container{
+display:flex;
+justify-content:right;
+}
+li a{
+margin-right:30px;
+background:linear-gradient(to right,#fffdd0,#7b3f00);
+background-clip:text;
+color:transparent;
+text-decoration:none;
+font-family:fantasy;
+letter-spacing:2px;
+font-size:large;
+}
+.reserve{
+    color:yellow;
+    text-shadow:none;
+}
+.reserve:hover{
+    text-shadow:0 0 3px yellow,0 0 3px yellow;
+}
+#slogan{
+color:white;
+width:30%;
+margin:0 auto;
+padding:100px;
+text-transform:capitalize;
+font-family:georgia;
+word-spacing:5px;
+font-size:xx-large;
+font-weight:800;
+text-align:center;
+line-height:40px;
+text-shadow:0 0 20px #000;
+text-indent:10px;
+animation:slideLeft 1s ease forwards;
+}
+#highlite{
+color:#00db2c;
+text-shadow:none;
+}
+#highlite:hover{
+    text-shadow:0 0 10px white,0 0 10px white;
+}
+#order{
+text-align:center;
+margin-top:30px;
+animation:slideTop 3s ease forwards;
+}
+#order a{
+text-decoration:none;
+color:white;
+font-weight:100;
+font-size:15px;
+font-family:times new roman;
+border:1px solid #00db2c;
+padding:10px 30px 10px 30px;
+background-color: #00db2c;
+border-radius:20px;
+}
+#order a:hover{
+    box-shadow:0 0 15px #00bd2c,0 0 15px #00bd2c;
+}
+#heading{
+font-family:georgia;
+font-size:50px;
+font-weight:900;
+text-align:center;
+background:linear-gradient(to right,magenta,aqua);
+background-clip:text;
+color:transparent;
+margin-top:0px;
+}
+.heading2{
+text-align:center;
+font-family:sans-serif;
+font-weight:900;
+color:#00db2c;
+}
+img{
+background-position:center;
+background-size:cover;
+}
+#card{
+display:inline-block;
+width:300px;
+height:500px;
+line-height:20px;
+border-right:1px solid #ddd;
+border-bottom:1px solid #ddd;
+margin:20px 0 20px 10px;
+background:linear-gradient(to bottom,silver,white);
+padding:30px 0 30px 0;
+overflow:auto;
+transition:all 0.50s ease-in-out;
+}
+#card:hover{
+box-shadow:5px 5px 5px rgba(0,0,0,0.4);
+}
+#img{
+display:flex;
+justify-content:center;
+padding-bottom:20px;
+transition:all 0.50s ease-in-out;
+}
+#img:hover{
+transform:scale(1.1);
+}
+#head{
+text-align:center;
+font-weight:600;
+margin:0 0 20px 0;
+}
+#ingredient{
+text-indent:10px;
+text-align:justify;
+padding: 5px 25px 20px 25px;
+line-height:25px;
+text-transform:capitalize;
+}
+@keyframes slideRight{
+    0%{
+        transform:translateX(-100px);
+        opacity:0.5;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform:translateX(100px);
+        opacity:0;
+    }
+    
+    100%{
+        transform:translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes slideTop{
+    0%{
+       transform:translateY(100px);
+        opacity:0;
+    }
+    50%{
+        transform:translateY(50px);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity:1;
+    }
+}
+</style>
+<body>
+<div id="intro" style="background-image:url('Desserts bg.jpg'); border-bottom:1px solid #000;padding-bottom:200px;background-position:center;background-size:cover;background-attachment:fixed; height:450px;">
+<!---Nav Starts--->
+<nav id="nav">
+<ul id="container" style="list-style-type:none;">
+<li><a href="Good Taste Restaurant.html" title="Home">Home</a></li>
+<li><a href="Menupage.html" title="Salads">Salads</a></li>
+<li><a href="Starters.html" title="Starters">Starters</a></li>
+<li><a href="Main course.html" title="Main course">Main Course</a></li>
+<li><a href="Beverages.html" title="Beverages">Beverages</a></li>
+<li><a href="#heading" title="Desserts">Desserts</a></li>
+<li><a href="Reserve.html" class="reserve" title="Reserve a table">Reserve</a></li>
+</ul>
+</nav>
+<!---Nav ends--->
+<div id="slogan">Life is <span id="highlite">Sweet</span> Please Take A <span id="highlite">Treat.</span>
+<div id="order"><a href="#heading">Explore Desserts</a></div>
+</div>
+</div>
+<h1 id="heading">Desserts</h1>
+<div id="card">
+<div id="img"><img src="Gulab_Jamun.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Gulab Jamun</p>
+<div id="ingredient">Wheat flour, Milk powder, Elachi powder, Sugar, ghee.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Gajar-Ka-Halwa.png" width="250px" height="250px"></div>
+<br>
+<p id="head">Halwa</p>
+<div id="ingredient">Wheat flour, Jaggery, Elachi powder, Ghee.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Rasa_Malai-.png" width="200px" height="200px"></div>
+<br>
+<p id="head">Rasa Malai</p>
+<div id="ingredient">Milk, Saffron, Nuts( badam, cashew, pista, almonds), sugar.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Rasagulla.png" width="200px" height="250px"></div>
+<br>
+<p id="head">Rasagulla</p>
+<div id="ingredient"> Milk, Sugar, elachi flavour essence.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Kulifi_image.png" width="250px" height="200px"></div>
+<br>
+<p id="head">kulfi</p>
+<div id="ingredient">Milk, Sugar, Corn flour, Bread crumbs, badam, cashew nuts, Elachi powder, saffron milk. </div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Fruit_falooda-.png" width="120px" height="250px"></div>
+<br>
+<p id="head">Fruit Faluda</p>
+<div id="ingredient">Fruits( apple, greens grapes, papaya, watermelon, pine apple), sooked sabja seeds, falooda semiya, jellies, rose syrup, flavoured milk, ice cream.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Dry_Fruit_Falooda-.png" width="150px" height="250px"></div>
+<br>
+<p id="head">Dry Fruit Faluda</p>
+<div id="ingredient">Sabja seeds, falooda semiya, jellies, fresh fruits, dry fruits( badam, cashew, raisins,  walnut, pista), icecream.
+</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Chocolate_Dream_cake.png" width="300px" height="250px"></div>
+<br>
+<p id="head">Chocolate Dream Cake</p>
+<div id="ingredient">chocolate cake, chocolate milk, whipping cream, chocolate layer, choco chips, chocolate ganache, coco powder.
+</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="milk_cake.png" width="300px" height="250px"></div>
+<br>
+<p id="head">Milk Cake</p>
+<div id="ingredient">Milk, Fresh cream, condensed milk, vanilla essense, refined oil, baking powder, baking soda, curd, all purpose flour, sugar, milk, fresh whipping cream, white chocolate, strawberry.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Ice_Cream_Cake-.png" width="250px" height="200px"></div>
+<br>
+<p id="head">Icecream Cake</p>
+<div id="ingredient">Vanilla cake, chocolate cake, icecreams with different flavours, nuts, choco chips.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Red_Valavet_Cake.png" width="250px" height="300px"></div>
+<br>
+<p id="head">Red Velvet Cake</p>
+<div id="ingredient">vanilla essense, refined oil, baking powder, baking soda, curd, all purpose flour, milk, Sugar, Red food colour, Vanilla whipping cream. </div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+<div id="card">
+<div id="img"><img src="Strawberry-Cheesecake.png" width="250px" height="200px"></div>
+<br>
+<p id="head">Cheese Cake</p>
+<div id="ingredient">cheese, marie gold biscuit, blueberries, sugar, milk, egg.</div>
+<div id="order"><a href="For Orders.html">Order Now</a></div>
+</div>
+
+<div style="text-align:center;margin:20px 0 30px 0;"><a href="#nav" style="border:1px solid black;background-color:blue;color:white;border-radius:15px;padding:10px;text-decoration:none;">Back Top &uarr;</a></div>
+
+</body>
+</html>
