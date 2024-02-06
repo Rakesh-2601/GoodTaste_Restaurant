@@ -118,10 +118,10 @@ box-shadow:5px 5px 5px rgba(0,0,0,0.4);
 display:flex;
 justify-content:center;
 padding-bottom:20px;
-transition:all 0.50s ease-in-out;
+filter: drop-shadow(0 0 10px rgba(0,0,0,0.4));
 }
 #img:hover{
-transform:scale(1.1);
+    animation:beat 2s linear infinite;
 }
 #head{
 text-align:center;
@@ -168,6 +168,20 @@ text-transform:capitalize;
     100%{
         transform:translateY(0px);
         opacity:1;
+    }
+}
+@keyframes beat{
+    0%{
+    transform:scale(0.75);
+    opacity:0.5;
+    }
+    50%{
+    transform:scale(1);
+    opacity:1;
+    }
+    100%{
+    transform:scale(0.75);
+    opacity:0.5;
     }
 }
 </style>
