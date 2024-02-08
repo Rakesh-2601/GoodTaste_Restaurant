@@ -1,6 +1,6 @@
 *{
-margin:0;
-padding:0;
+    margin:0;
+    padding: 0;
 }
 body{
     background-image:url('restaurant bg.jpg');
@@ -8,124 +8,129 @@ body{
     background-size:cover;
     background-attachment:fixed;
 }
-#nav{
-padding:20px 0 30px 0;
-animation:slideRight 4s ease forwards;
+nav{
+    display:flex;
+    align-items :center;
+    justify-content:space-between;
+    background-color:cadetblue;
+    position:sticky;
+    top:0;
+    z-index:2;
+} 
+.logo-div{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+} 
+.logo a{
+    display:flex;
+    cursor:pointer;
 }
-#container{
-display:flex;
-justify-content:right;
-position:fixed;
-left:60%;
+.menu-icon{
+  display:none;
+    cursor:pointer;
+}
+.menu-icon .fa-icon{
+    color:white;
+    padding-right:20px;
+    font-size:25px;
+}
+ul{
+    display:flex;
+    align-items:center;
+    
 }
 li a{
+    display:flex;
     font-family:fantasy;
     text-decoration:none;
-    padding:8px;
     color:white;
     font-size:large;
     letter-spacing:2px;
+    padding:0 40px;
     text-shadow:none;
-    position:fixed;
-    left:90%;
-    margin-top:-4px;
-}
-.home{
-    position:fixed;
-    left:40%;
-}
-.menu{
-    position:fixed;
-    left:50%;
-}
-.about{
-    position:fixed;
-    left:60%;
-}
-.contact{
-    position:fixed;
-    left:75%;
+    animation:slideRight 4s ease forwards;
 }
 .reserve{
     color:yellow;
     text-shadow:none;
-    position:fixed;
-    left:90%;
-    margin-top:-4px;
     animation:slideTop 1s ease forwards;
 }
 .reserve:hover{
-    text-shadow:0 0 5px yellow,0 0 5px yellow;
+    text-shadow:4px 4px 2px black;
+}
+.reserve:active{
+    text-shadow:none;
 }
 li a:hover{
-text-shadow:4px 4px 2px rgba(0,0,0,0.4),4px 4px 3px rgba(0,0,0,0.4);
-z-index:-1;
+    text-shadow:4px 4px 2px rgba(0,0,0,0.4),4px 4px 3px rgba(0,0,0,0.4);
+    z-index:2;
 }
 li a:active{
-margin:0;
-text-shadow: none;
+    transform:scale(0.9);
+    text-shadow: none;
 }
 #logo{
-display:flex;
-justify-content:center;
-padding-right:90px;
-margin-top:0;
-filter:drop-shadow(0px 0px 10px #fff);
-animation:slideTop 0.8s ease forwards;
+    text-align:center;
+    margin-top:0;
+    filter:drop-shadow(0px 0px 10px #fff);
+    z-index:1;
+    animation:slideTop 0.8s ease forwards;
 }
 #name{
-padding-top:60px;
-word-spacing:10px;
-font-family:lucida handwriting;
-font-weight:600;
-font-size:50px;
-background:linear-gradient(to right,yellow,orange,orangered,red);
-color:transparent;
-background-clip:text;
-animation:slideLeft 1.5s ease forwards;
-}
-#name:hover{
-    text-shadow: 0 0 30px yellow,0 0 30px yellow;;
+    display:block;
+    word-spacing:10px;
+    font-family:lucida handwriting;
+    font-weight:600;
+    font-size:50px;
+    background:linear-gradient(to right,yellow,orange,orangered,red);
+    color:transparent;
+    background-clip:text;
+    animation:slideLeft 1.5s ease forwards;
+    filter:drop-shadow(0 0 2px black) ;
 }
 #name2{
-padding-top:130px;
-word-spacing:10px;
-font-family:lucida handwriting;
-font-weight:600;
-font-size:20px;
-color:white;
-text-shadow: 0 0 30px black;
-animation:slideTop 2s ease forwards;
+    text-align:right;   
+    width:70%;
+    word-spacing:10px;
+    font-family:lucida handwriting;
+    font-weight:600;
+    font-size:20px;
+    color:white;
+    text-shadow: 0 0 30px black;
+    animation:slideTop 2s ease forwards;
 }
 #name2:hover{
-    text-shadow: 0 0 10px white,0 0 10px white;  
+    text-shadow: 0 0 5px black;  
 }
 #slogan{
-word-spacing:10px;
-font-family:lucida handwriting;
-font-weight:600;
-font-size:20px;
-background:linear-gradient(to right,pink,#ff007f,red,orangered,orange,yellow);
-background-clip:text;
-color:transparent;
-text-align:center;
-margin-top:30px;
-margin-bottom:50px;
+    word-spacing:10px;
+    font-family:lucida handwriting;
+    font-weight:600;
+    font-size:20px;
+    background:linear-gradient(to right,pink,#ff007f,red,orangered,orange,yellow);
+    background-clip:text;
+    color:transparent;
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:50px;
+    animation:slideRight 1s ease forwards;
 }
+
 #slogan:hover{
-    text-shadow: 0 0 5px yellow;   
+    filter:drop-shadow(0 0 2px black);  
 }
 #welcome{
-border-top:1px solid lightgreen;
-border-right:1px solid lightgreen;
-border-bottom:1px solid aqua;
-border-left:1px solid aqua;
-padding:30px 0 70px 0;
-width:52%;
-margin:0 auto;
-border-radius:10px;
-backdrop-filter:blur(1px);
-background-color:rgba(225,225,225,0.1);
+    border-top:1px solid lightgreen;
+    border-right:1px solid lightgreen;
+    border-bottom:1px solid aqua;
+    border-left:1px solid aqua;
+    padding:30px 0 70px 0;
+    width:52%; 
+    backdrop-filter:blur(1px);
+    border-radius:20px;
+    margin:0 auto;
+    background-color:rgba(225,225,225,0.1);
 }
 #welcome:hover{
     background-color:beige;
@@ -144,51 +149,40 @@ div h2{
     word-spacing:10px;
     text-align:center;
     color:white;
+    animation:slideLeft 1s ease forwards;
 }
-/* div h2:hover {
-    text-shadow:0 0 10px white;
-    color:navy;
-    
-} */
 #explore{
-text-align:center;
+    text-align:center;
+    animation:slideTop 2s ease forwards;
+}
+#welcome a{
+    text-decoration:none;
+    color:white;
+    padding:13px;
+    border-radius:5px;
+    background-color:#00db2c;
+    word-spacing:5px;
+    font-weight:600;
+    margin-bottom:20px;
+    opacity:0.9;
+    transition:all 0.10s ease-in-out;
 }
 #welcome a:hover{
-opacity:1.0;
-border:2px solid black;
-box-shadow:5px 5px #00db2c,0 5px 5px 5px rgba(0,0,0,0.4);
-}
-#welcome a:active{
-margin:0;
-box-shadow:none;
-}
-
-
-#welcome a{
-text-decoration:none;
-color:white;
-padding:13px;
-border-radius:5px;
-background-color:#00db2c;
-word-spacing:5px;
-font-weight:600;
-position:fixed;
-left:40%;
-margin-bottom:20px;
-margin-top:-4px;
-opacity:0.9;
-transition:all 0.10s ease-in-out;
+    opacity:1;
+    border:2px solid black;
 }
 #menu{
-background:linear-gradient(to right,skyblue,aqua,blue,navy);
-background-clip:text;
-color:transparent;
-margin:20px 0 20px 0;
-padding:0 0 0 540px;
-font-family:georgia;
-font-size:30px;
-font-weight:700;
+    background:linear-gradient(to right,skyblue,aqua,blue,navy);
+    background-clip:text;
+    color:transparent;
+    margin:20px 0 20px 0;
+    padding:0 0 0 540px;
+    font-family:georgia;
+    font-size:30px;
+    font-weight:700;
 }
+
+/* Animation Part Starts */
 @keyframes slideRight{
     0%{
         transform:translateX(-100px);
@@ -219,17 +213,117 @@ font-weight:700;
         opacity:1;
     }
 }
-@keyframes beat{
-    0%{
-    transform:scale(0.75);
-    opacity:0.5;
+
+/* Animation part Ends */
+
+
+/* Responsive web design  Starts */
+@media (max-width:1000px) and (min-width:750px){
+    .menu-icon{
+        display:none;
     }
-    50%{
-    transform:scale(1);
-    opacity:1;
+    .menu-icon:active{
+        transform:scale(0.9);
     }
-    100%{
-    transform:scale(0.75);
-    opacity:0.5;
+    nav{
+        display:flex;
+        align-items :center;
+        justify-content:space-between;
+        background-color:cadetblue;
     }
+    ul{
+        display:flex;
+        align-items:center;
+    }
+    li a{
+        padding:20px;
+    }
+    .link{
+        display:flex;
+    }
+    #logo{
+        display:block;
+        text-align: center;
+    }
+    #logo #name{
+        display:block;
+    }
+}
+@media (max-width:750px) and (min-width:100px){
+    .menu-icon{
+        display:block;
+    }
+    .menu-icon:active{
+        transform:scale(0.9);
+    }
+    nav{
+        display:block;
+        padding-bottom:20px;
+    }
+    ul{
+        flex-direction:column;
+    }
+    .link{
+        display:none;
+        padding-top:20px;
+    }
+    li a{
+        animation:none;
+    }
+    li a:active{
+        transform:scale(0.9);
+    }
+    .reserve{
+        animation:none;
+    }
+
+    #logo img{
+        display:none;
+    }
+    #logo #name{
+        display:block;
+        padding:0;
+    }
+    #logo #name2{
+        width:90%;
+    }
+    #explore a{
+        display:block;
+        text-align:center;
+        width:20%;
+        margin:0 auto;
+    }
+    #explore a:active{
+        transform:scale(0.9);
+    }
+    #welcome{
+        border:0;
+        background:0;
+        width:100%;
+        color:none;
+        backdrop-filter: none;
+    }
+    #welcome h2{
+        display:block;
+        font-size:20px;
+    }
+    #welcome:hover{
+        background:none;
+        box-shadow:none;
+    }
+    #welcome:hover>h2{
+        color:white;
+        text-shadow:2px 2px 1px black ;
+    }
+    #welcome:hover>#slogan{
+        filter:drop-shadow(2px 2px 0 black)
+    }
+    #slogan{
+        text-align:none;
+    }
+}
+/* Responsive web design  Ends */
+/* .show Must have to written below the media  */
+.show{
+    display:block;
 }

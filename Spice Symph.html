@@ -3,29 +3,50 @@
 <head><title>Spice Symph Restaurant</title></head>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="stylesheet" href="spicesymph.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
 <!---Nav Starts--->
-<nav id="nav" style>
-<ul id="container" style="list-style-type:none;">
-<li><a href="#logo" title="Home" class="home">Home</a></li>
-<li><a href="Menupage.html" title="Our Food Menu" class="menu">Menu</a></li>
-<li><a href="AboutUs.html" title="About Us" class="about">About Us</a></li>
-<li><a href="ContactUs.html" title="Contact Us" class="contact">Contact</a></li>
-<li><a href="Reserve.html" class="reserve" title="Reserve a table">Reserve</a></li>
+<nav>
+    <div class="logo-div">
+        <div  class="logo" style="cursor:pointer;"><a href="AboutUs.html" target="_parent" ><object data="spice symph logo.png" width="80px" height="80px" title="Spice Symph Restaurant"></object></a></div>
+        <div  class="menu-icon" onclick="toggleMenu()">
+            <i class="fa fa-bars fa-icon" title="Open Menu"></i>
+    </div>
+    </div>
+<div>
+<ul style="list-style-type:none;">
+<li class="link"><a href="Spice Symph.html" title="Home">Home</a></li>
+<li class="link"><a href="Menupage.html" title="Our Food Menu">Menu</a></li>
+<li class="link"><a href="AboutUs.html" title="About Us" >About Us</a></li>
+<li class="link"><a href="ContactUs.html" title="Contact Us">Contact</a></li>
+<li class="link"><a href="Reserve.html" class="reserve" title="Reserve a table">Reserve</a></li>
 </ul>
+</div>
 </nav>
 <!---Nav ends--->
 
 <!---Body Starts--->
 
 <div id="logo">
-<span><img src="spice symph logo.png" alt="Broken image" style="width:170px;height:170px;"></span><span id ="name">Spice Symph</span><span id="name2">RESTAURANT</span></div>
+    <div><img src="spice symph logo.png" alt="Broken Image" with="150px" height="150px"></div>
+<div id ="name">Spice Symph</div>
+<div id="name2">RESTAURANT</div>
+</div>
 
 <div id="welcome">
 <h2> Welcome To Our Restaurant </h2><br>
 <p id="slogan">" Nothing Brings People Together Like Good Food "</p>
 <p id="explore"><a href="Menupage.html">Explore Menu</a></p>
 </div>
+<br><br>
 <!---Body ends--->
+<script>
+function toggleMenu(){
+    var links = document.querySelectorAll(".link");
+    for(let i = 0; i < links.length; i++){
+        links[i].classList.toggle("show");
+    }
+}
+</script>
 </body>
 </html>
