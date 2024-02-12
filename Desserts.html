@@ -319,6 +319,18 @@ img{
      display:block;
  }
 
+/* scroll animation */
+.hidden{
+    opacity:0;
+    filter:blur(5px);
+    transform:translateY(50px);
+    transition:all 2s ease;
+}
+.reveal{
+    opacity:1;
+    filter:blur(0);
+    transform:translateY(0);
+}
 </style>
 <body>
 <!---Nav Starts--->
@@ -348,50 +360,50 @@ img{
 </div>
 <br><br>
 <div class="Contents">
-<h1 id="heading">Desserts</h1>
-<div id="card">
+<h1 id="heading" class="hidden">Desserts</h1>
+<div id="card"  class="hidden"  class="hidden">
 <div id="img"><img src="Gulab_Jamun.png" width="250px" height="250px"></div>
 <br>
 <p id="head">Gulab Jamun</p>
 <div id="ingredient">Wheat flour, Milk powder, Elachi powder, Sugar, ghee.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card"  class="hidden">
 <div id="img"><img src="Gajar-Ka-Halwa.png" width="250px" height="250px"></div>
 <br>
 <p id="head">Halwa</p>
 <div id="ingredient">Wheat flour, Jaggery, Elachi powder, Ghee.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card"  class="hidden">
 <div id="img"><img src="Rasa_Malai-.png" width="200px" height="200px"></div>
 <br>
 <p id="head">Rasa Malai</p>
 <div id="ingredient">Milk, Saffron, Nuts( badam, cashew, pista, almonds), sugar.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card"  class="hidden">
 <div id="img"><img src="Rasagulla.png" width="200px" height="250px"></div>
 <br>
 <p id="head">Rasagulla</p>
 <div id="ingredient"> Milk, Sugar, elachi flavour essence.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card"  class="hidden">
 <div id="img"><img src="Kulifi_image.png" width="250px" height="200px"></div>
 <br>
 <p id="head">kulfi</p>
 <div id="ingredient">Milk, Sugar, Corn flour, Bread crumbs, badam, cashew nuts, Elachi powder, saffron milk. </div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card"  class="hidden">
 <div id="img"><img src="Fruit_falooda-.png" width="120px" height="250px"></div>
 <br>
 <p id="head">Fruit Faluda</p>
 <div id="ingredient">Fruits( apple, greens grapes, papaya, watermelon, pine apple), sooked sabja seeds, falooda semiya, jellies, rose syrup, flavoured milk, ice cream.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card"  class="hidden">
 <div id="img"><img src="Dry_Fruit_Falooda-.png" width="150px" height="250px"></div>
 <br>
 <p id="head">Dry Fruit Faluda</p>
@@ -399,7 +411,7 @@ img{
 </div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card"  class="hidden">
 <div id="img"><img src="Chocolate_Dream_cake.png" width="300px" height="250px"></div>
 <br>
 <p id="head">Chocolate Dream Cake</p>
@@ -407,7 +419,7 @@ img{
 </div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card"  class="hidden">
 <div id="img"><img src="milk_cake.png" width="300px" height="250px"></div>
 <br>
 <p id="head">Milk Cake</p>
@@ -421,14 +433,14 @@ img{
 <div id="ingredient">Vanilla cake, chocolate cake, icecreams with different flavours, nuts, choco chips.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card"  class="hidden">
 <div id="img"><img src="Red_Valavet_Cake.png" width="250px" height="300px"></div>
 <br>
 <p id="head">Red Velvet Cake</p>
 <div id="ingredient">vanilla essense, refined oil, baking powder, baking soda, curd, all purpose flour, milk, Sugar, Red food colour, Vanilla whipping cream. </div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card"  class="hidden">
 <div id="img"><img src="Strawberry-Cheesecake.png" width="250px" height="200px"></div>
 <br>
 <p id="head">Cheese Cake</p>
@@ -448,6 +460,23 @@ img{
             links[i].classList.toggle("show");
         }
     }
+
+        //scroll animation
+
+        const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add("reveal");
+        }else{
+            entry.target.classList.remove("reveal");
+        }
+    });
+});
+
+const hiddenElements =document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
+
 
 </script>
 </body>

@@ -305,6 +305,26 @@ line-height:25px;
 .show{
     display:block;
 }
+.hidden{
+    opacity:0;
+    filter:blur(5px);
+    transform:translateY(50px);
+    transition:all 2s ease;
+}
+.reveal{
+    opacity:1;
+    filter:blur(0);
+    transform:translateY(0);
+}
+.hidden:nth-child(2){
+    transition-delay:200ms;
+}
+.hidden:nth-child(3){
+    transition-delay:400ms;
+}
+.hidden:nth-child(4){
+    transition-delay:600ms;
+}
 </style>
 <body>
 <!---Nav Starts--->
@@ -334,10 +354,9 @@ line-height:25px;
 <div class="quotes"><span id="highlite">loaded</span> with many minerals, nutrients & <span id="highlite">rich</span> in fibre.</div>
 <div id="order"><a href="#heading">Explore Salads</a></div>
 </div>
-
-<div class="Contents">
-<h1 id="heading">Salads</h1>
-<div id="card">
+<div class="Contents" >
+<h1 id="heading" class="menu hidden">Salads</h1>
+<div id="card" class="hidden">
 <div id="img"><img src="Strawberry apple salad.png" width="200px" height="200px"></div>
 <br>
 <p id="head">Stawberry Apple</p>
@@ -345,7 +364,7 @@ line-height:25px;
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
 
-<div id="card">
+<div id="card" class="menu hidden">
 <div id="img"><img src="cucumber_salad.png" width="200px" height="200px"></div>
 <br>
 <p id="head">Cucumber Onion</p>
@@ -353,7 +372,7 @@ line-height:25px;
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
 
-<div id="card">
+<div id="card" class="menu hidden">
 <div id="img"><img src="Mediterranean-Tuna-Pasta-Salad-5.png" width="250px" height="200px"></div>
 <br>
 <p id="head">Mediterranean Tuna-Spinach Salad</p>
@@ -361,7 +380,7 @@ line-height:25px;
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
 
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="Chinese-Sesame-Chicken-Salad--.png" width="200px" height="200px"></div>
 <br>
 <p id="head">Sesame Kohlrabi & Chicken Salad</p>
@@ -369,7 +388,7 @@ line-height:25px;
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
 
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="Beets-Greens-Salad_.png" width="200px" height="200px"></div>
 <br>
 <p id="head">Beet Salad</p>
@@ -377,7 +396,7 @@ line-height:25px;
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
 
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="chickpea-tuna-salad.png" width="200px" height="200px"></div>
 <br>
 <p id="head">Chickpea Tuna Salad</p>
@@ -385,7 +404,7 @@ line-height:25px;
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
 
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="Cucumber-and-Radish-Salad-.png" width="200px" height="200px"></div>
 <br>
 <p id="head">Radish, Celery & Cucumber Salad</p>
@@ -393,7 +412,7 @@ line-height:25px;
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
 
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="Rainbow_salad.png" width="200px" height="200px" ></div>
 <br>
 <p id="head">Rainbow Chopped Salad</p>
@@ -412,6 +431,21 @@ function toggleMenu(){
         links[i].classList.toggle("show");
     }
 }
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add("reveal");
+        }else{
+            entry.target.classList.remove("reveal");
+        }
+    });
+});
+
+const hiddenElements =document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
+
 
 </script>
 </body>

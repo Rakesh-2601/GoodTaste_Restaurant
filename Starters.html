@@ -313,6 +313,19 @@
     .show{
         display:block;
     }
+
+    /* scroll animation */
+    .hidden{
+    opacity:0;
+    filter:blur(5px);
+    transform:translateY(50px);
+    transition:all 2s ease;
+}
+.reveal{
+    opacity:1;
+    filter:blur(0);
+    transform:translateY(0);
+}
     </style>
 <body>
 <!---Nav Starts--->
@@ -342,44 +355,44 @@
 <div id="order"><a href="#heading">Explore Starters</a></div>
 </div>
 <div class="Contents">
-<h1 id="heading">Starters</h1>
-<h2 class="heading2" style="text-align:center;color:magenta;">Veg-Starters</h2>
-<div id="card">
+<h1 id="heading" class="hidden">Starters</h1>
+<h2 class="heading2 hidden" style="text-align:center;color:magenta;">Veg-Starters</h2>
+<div id="card" class="hidden">
 <div id="img"><img src="Paneer_Tikka-.png" width="300px" height="250px"></div>
 <br>
 <p id="head">Panner Tikka</p>
 <div id="ingredient">Paneer, Tomato, onion, capsicum, cumin seeds, coriander seeds, brown cardamom, green cardamom, cloves, black pepper, star anise, shahee zeera, ginger-garlic paste, turmeric powder, red chilli powder, coriander powder, Salt, kashmiri chilli powder, refined oil, lime, dry mango powder, chaat masala, green chilli, curd, garam masala, coriander leaves, choppedmint leaves</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="veg_spring_roll-.png" width="300px" height="200px"></div>
 <br>
 <p id="head">Vegetable Spring Roll</p>
 <div id="ingredient">shredded cabbage, shredded carrot, spring onion, garlic, soy sauce, hot chilli sauce, white pepper, ground, cornflour, white vinegar, oil.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="Homemade-Mozzarella-Sticks.png" width="200px" height="250px"></div>
 <br>
 <p id="head">Fried Mozzarella Sticks</p>
 <div id="ingredient">Italian seasoned bread crumbs, garlic salt, all-purpose flour, cornstarch, oil for frying, mozzarella cheese sticks.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="Mushroom_rolls-.png" width="300px" height="200px"></div>
 <br>
 <p id="head">Mushroom Roll</p>
 <div id="ingredient">Romaine Lettuce, Cucumbers, Tomatoes, Peppers, Onions, Olives & Cheese Strawberry Salad 8.95 Spring Mix, Strawberries, Goat Cheese, and Walnuts With Raspberry Vinaigrette.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="panner_rolls.png" width="250px" height="250px"></div>
 <br>
 <p id="head">Paneer rolls</p>
 <div id="ingredient">tortillas, teaspoon powdered red chilli, cumin seeds, coriander leaves, sunflower oil, fennel seeds, grated paneer, powdered garam masala powder, powdered curry powder, salt, garlic, chopped carrot, chopped cucumber, chopped green chilli, chopped capsicum, chopped onion, chopped tomato.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="big_cheesy_maggie_rolls-.png" width="200px" height="250px"></div>
 <br>
 <p id="head">Cheesy Maggie Roll</p>
@@ -387,7 +400,7 @@
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
 
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="Veg_momos-.png" width="250px" height="300px"></div>
 <br>
 <p id="head">Veg Momo's</p>
@@ -395,7 +408,7 @@
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
 
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="Panner_momos-.png" width="200px" height="250px"></div>
 <br>
 <p id="head">Panner momo's</p>
@@ -403,14 +416,14 @@
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
 
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="Corn-Cheese-Balls-.png" width="180px" height="180px"></div>
 <br>
 <p id="head">Cheese Corn Balls</p>
 <div id="ingredient">potato boiled & mashed, onion, capsicum, finely, ginger garlic paste, chilli, coriander, chilli flakes, pepper powder, cumin powder, garam masala, mozzarella cheese, bread crumbs, salt.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="Baby-Corn-Manchurian-.png" width="200px" height="200px"></div>
 <br>
 <p id="head">Chilli Baby Corn</p>
@@ -418,50 +431,50 @@
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
 
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="french-fries-.png" width="300px" height="200px"></div>
 <br>
 <p id="head">French fries</p>
 <div id="ingredient">potatoes , Salt to taste, Oil for deep-frying, chilli powder, coriander.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="Cauliflower-Manchurian.png" width="250px" height="250px"></div>
 <br>
 <p id="head">Gobi Manchurian</p>
 <div id="ingredient">florets gobi / cauliflower, water, maida / plain flour, cup corn flour, kashmiri red chilli powder, ginger garlic paste, salt, oil, garlic, ginger, green chilli, onion, spring onion, capsicum, tomato sauce, chilli sauce, vinegar, soy sauce, pepper, salt, corn flour.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div><h2 class="heading2" style="color:red;text-align:center;">Non-Veg Starters</h2></div>
-<div id="card">
+<div><h2 class="heading2 hidden" style="color:red;text-align:center;">Non-Veg Starters</h2></div>
+<div id="card" class="hidden">
 <div id="img"><img src="veganpopcornchicken-r.png" width="250px" height="250px"></div>
 <br>
 <p id="head">Chicken popcorn</p>
 <div id="ingredient">flour, garlic powder, salt, ground black pepper, eggs, lemon juice, oil, skinless, boneless chicken breasts.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="Chicken-Kathi-Roll.png" width="250px" height="250px"></div>
 <br>
 <p id="head">Chicken kathi roll</p>
 <div id="ingredient">Refined Flour, Boneless Chicken, Ginger, Garlic, cloves, Green chillies, Salt to taste, Cumin powder, Chaat masala, Onions, Carrot, Oil, Green chutney, Fresh coriander leaves.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="fish-cake.png" width="200px" height="200px"></div>
 <br>
 <p id="head">Fish cakes</p>
 <div id="ingredient">Fish, breadcrumbs,Green onions, Eggs, Lemon juice, coriander leaves, Oil, seasonings.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="Butter-Chicken-Meatballs.png" width="250px" height="300px"></div>
 <br>
 <p id="head">Butter chicken meatballs</p>
 <div id="ingredient">Ground chicken, Egg, Panko Bread crumbs, Kosher Salt and Pepper, Olive Oil, Yellow Onion, Garlic, Garam, Masala, Curry Powder, Turmeric, Cayenne Pepper, Tomato Paste, Coconut Milk, Greek Yogurt, Unsalted Butter.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="ChickenShawarma.png" width="150px" height="200px"></div>
 <br>
 <p id="head">Chicken shawarma</p>
@@ -469,14 +482,14 @@
 Salt, Whole Wheat Flour, Active dry yeast, Milk, Sugar, Cucumber, Carrot, Tomato , Chilli vinegar.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="chinese-chilli-chicken.png" width="300px" height="200px"></div>
 <br>
 <p id="head">Dragon chilli chicken </p>
 <div id="ingredient">Boneless Chicken Breast, Spring Onion, Dark Soy Sauce, Chilli garlic paste, Egg, All Purpose Flour, Corn FlourPepper, Oil, Dry Red Chilli, Cashews, Onion sliced thinly, Capsicum, Ginger Garlic Paste, Chilli garlic paste, Dark Soy sauce, Tomato Ketchup, Salt, Sugar.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="chicken_roll.png" width="200px" height="250px"></div>
 <br>
 <p id="head">Chicken rolls</p>
@@ -484,21 +497,21 @@ Salt, Whole Wheat Flour, Active dry yeast, Milk, Sugar, Cucumber, Carrot, Tomato
 coriander powder, powdered turmeric, powdered black pepper, garlic paste, cumin powder, low fat yoghurt, ginger paste, salt, vegetable oil.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="Chicken-Momos.png" width="250px" height="250px"></div>
 <br>
 <p id="head">Chicken momos</p>
 <div id="ingredient">Chicken, Refined flour, Salt to taste, Spring onions with greens, Ginger, Green chillies, Garlic, cloves, Soy sauce.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="spicy-chettinad-pepper-chicken.png" width="200px" height="250px"></div>
 <br>
 <p id="head">Spicy Chettinad Chicken</p>
 <div id="ingredient">Chicken , Garlic, Ginger, Turmeric powder, Lemon, Onion, Tomato, Curry leaves, Cumin powder, Fennel Powder, Coriander Powder, Black pepper powder, Salt, Oil, Water, Coriander Leaves.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="shrip_popcorn.png" width="300px" height="250px"></div>
 <br>
 <p id="head">Prawn popcorn</p>
@@ -506,14 +519,14 @@ coriander powder, powdered turmeric, powdered black pepper, garlic paste, cumin 
 Spring onion greens diagonally sliced 1 stalk, Cornstarch.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="fish-fingers.png" width="300px" height="300px"></div>
 <br>
 <p id="head">Fish Fingers</p>
 <div id="ingredient">fish fillets, breadcrumb, all purpose flour, mayonnaise, lemon wedges, refined oil, parmesan cheese, black pepper, egg, tartare sauce, parsley.</div>
 <div id="order"><a href="For Orders.html">Order Now</a></div>
 </div>
-<div id="card">
+<div id="card" class="hidden">
 <div id="img"><img src="Broasted-Chicken.png" width="250px" height="200px"></div>
 <br>
 <p id="head">Broasted Chicken</p>
@@ -533,6 +546,24 @@ function toggleMenu(){
         links[i].classList.toggle("show");
     }
 }
+
+//scroll animation
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add("reveal");
+        }else{
+            entry.target.classList.remove("reveal");
+        }
+    });
+});
+
+const hiddenElements =document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
+
+
 </script>
 </body>
 </html>
