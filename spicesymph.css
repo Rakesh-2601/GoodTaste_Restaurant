@@ -218,38 +218,8 @@ div h2{
 
 
 /* Responsive web design  Starts */
-@media (max-width:1000px) and (min-width:750px){
-    .menu-icon{
-        display:none;
-    }
-    .menu-icon:active{
-        transform:scale(0.9);
-    }
-    nav{
-        display:flex;
-        align-items :center;
-        justify-content:space-between;
-        background-color:cadetblue;
-    }
-    ul{
-        display:flex;
-        align-items:center;
-    }
-    li a{
-        padding:20px;
-    }
-    .link{
-        display:flex;
-    }
-    #logo{
-        display:block;
-        text-align: center;
-    }
-    #logo #name{
-        display:block;
-    }
-}
-@media (max-width:750px) and (min-width:100px){
+
+@media only screen and (max-width:750px){
     .menu-icon{
         display:block;
     }
