@@ -117,7 +117,7 @@ opacity:0;
 animation:slideTop 3s ease forwards;
 
 }
-.Contents{
+ .Contents{
     background-color:gainsboro;
 }
 #heading{
@@ -264,8 +264,12 @@ line-height:25px;
     #logo #name{
         display:block;
     }
+    .contents{
+        background-color:gainsboro;
+        width:100%;
+    }
 }
-@media (max-width:750px) and (min-width:100px){
+@media (max-width:700px){
     .menu-icon{
         display:block;
     }
@@ -301,6 +305,47 @@ line-height:25px;
     }
     #order a:active{
         transform:scale(0.9);
+    }
+}
+@media (max-width:450px){
+    .menu-icon{
+        display:block;
+    }
+    .menu-icon:active{
+        transform:scale(0.9);
+    }
+    nav{
+        display:block;
+        padding-bottom:20px;
+    }
+    ul{
+        flex-direction:column;
+    }
+    .link{
+        display:none;
+        padding-top:20px;
+    }
+    li a{
+        animation:none;
+    }
+    li a:active{
+        transform:scale(0.9);
+    }
+    .reserve{
+        animation:none;
+    }
+    #order a{
+        display:block;
+        text-align:center;
+        width:20%;
+        margin:0 auto;
+        padding:3px 15px;
+    }
+    #order a:active{
+        transform:scale(0.9);
+    }
+    .contents{
+        height:700px;
     }
 }
 
