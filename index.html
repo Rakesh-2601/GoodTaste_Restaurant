@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spice Symph Restaurant</title>
 </head>
-<link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/png" href="images/favicon.png">
 <link rel="stylesheet" href="spicesymph.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
 <!---Nav Starts--->
-<nav class="navbar-light bg-light font-weight-bold d-flex flex-row-reverse">
-<div class="dropdown-menu" id="navbarNavDropdown">
-<ul style="list-style-type:none;" class="navbar-nav">
-<li class="link nav-item dropdown p-2"><a href="index.html" title="Home">Home</a></li>
-<li class="link p-2"><a href="Menupage.html" title="Our Food Menu">Menu</a></li>
-<li class="link p-2"><a href="AboutUs.html" title="About Us" >About Us</a></li>
-<li class="link p-2"><a href="ContactUs.html" title="Contact Us">Contact</a></li>
-<li class="link p-2"><a href="Reserve.html" class="reserve" title="Reserve a table">Reserve</a></li>
+<nav>
+    <div class="logo-div">
+        <div  class="logo" style="cursor:pointer;"><a href="AboutUs.html" target="_parent" ><object data="images/spice symph logo.png" width="80px" height="80px" title="Spice Symph Restaurant"></object></a></div>
+        <div  class="menu-icon" onclick="toggleMenu()">
+            <i class="fa fa-bars fa-icon" title="Open Menu"></i>
+    </div>
+    </div>
+<div>
+<ul style="list-style-type:none;">
+<li class="link"><a href="index.html" title="Home">Home</a></li>
+<li class="link"><a href="Menupage.html" title="Our Food Menu">Menu</a></li>
+<li class="link"><a href="AboutUs.html" title="About Us" >About Us</a></li>
+<li class="link"><a href="ContactUs.html" title="Contact Us">Contact</a></li>
+<li class="link"><a href="Reserve.html" class="reserve" title="Reserve a table">Reserve</a></li>
 </ul>
 </div>
 </nav>
@@ -26,7 +32,7 @@
 <!---Body Starts--->
 
 <div id="logo">
-    <div><img src="spice symph logo.png" alt="Broken Image" with="150px" height="150px"></div>
+    <div><img src="images/spice symph logo.png" alt="Broken Image" with="150px" height="150px"></div>
 <div id ="name">Spice Symph</div>
 <div id="name2">RESTAURANT</div>
 </div>
