@@ -294,6 +294,6 @@ div h2{
 }
 /* Responsive web design  Ends */
 /* .show Must have to written below the media  */
-.show{
-    display:block;
-}
+    .show{
+        display:block;
+    }
