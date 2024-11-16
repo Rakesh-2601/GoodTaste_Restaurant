@@ -216,82 +216,136 @@ div h2{
 
 /* Responsive web design  Starts */
 
-@media only screen and (max-width:750px){
+@media only screen and (max-width: 750px) {
+
+    
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    
+    .menu-icon:active {
+        transform: scale(0.9);
+    }
+
+    
+    nav {
+        display: block;
+        padding-bottom: 20px;
+    }
+
    
-     .menu-icon{
-        display:block;
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
     }
-    .menu-icon:active{
-        transform:scale(0.9);
+
+    
+    .link {
+        display: none;
+        padding-top: 20px;
+        width: 100%;
+        text-align: center;
     }
-    nav{
-        display:block;
-        padding-bottom:20px;
+
+   
+    .link.show {
+        display: block;
     }
-    ul{
-        flex-direction:column;
+
+   
+    li a {
+        animation: none;
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1.2rem;
     }
-    .link{
-        display:none;
-        padding-top:20px;
+
+    
+    li a:active {
+        transform: scale(0.9);
     }
-    li a{
-        animation:none;
+
+    
+    .reserve {
+        animation: none;
     }
-    li a:active{
-        transform:scale(0.9);
+
+    
+    #logo #name {
+        display: block;
+        padding: 0;
+        text-align: center;
+        font-size: 24px;
     }
-    .reserve{
-        animation:none;
+
+    #logo #name2 {
+        width: 90%;
+        text-align: center;
+        font-size: 16px;
     }
-    #logo #name{
-        display:block;
-        padding:0;
+
+    /* Adjust the explore menu link */
+    #explore a {
+        display: block;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        font-size: 1rem;
+        padding: 10px;
     }
-    #logo #name2{
-        width:90%;
+
+    #explore a:active {
+        transform: scale(0.9);
     }
-    #welcome a{
-        width:1rem;
+
+    /* Adjust the welcome section */
+    #welcome {
+        width: 100%;
+        background: none;
+        color: #333;
+        padding: 20px;
+        box-shadow: none;
+        text-align: center;
     }
-    #explore a{
-        display:block;
-        text-align:center;
-        width:10%;
-        margin:0 auto;
-        font-size:0.5rem;
+
+    #welcome h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
     }
-    #explore a:active{
-        transform:scale(0.9);
+
+    #slogan {
+        font-size: 1rem;
+        margin-top: 10px;
     }
-    #welcome{
-        border:0;
-        background:0;
-        width:100%;
-        color:none;
-        backdrop-filter: none;
-        
+
+    
+    #welcome:hover {
+        background: none;
+        box-shadow: none;
     }
-    #welcome h2{
-        display:block;
-        font-size:1.5rem;
+
+    #welcome:hover > h2 {
+        color: white;
+        text-shadow: 2px 2px 1px black;
     }
-    #welcome:hover{
-        background:none;
-        box-shadow:none;
+
+    #welcome:hover > #slogan {
+        filter: drop-shadow(2px 2px 0 black);
     }
-    #welcome:hover>h2{
-        color:white;
-        text-shadow:2px 2px 1px black ;
-    }
-    #welcome:hover>#slogan{
-        filter:drop-shadow(2px 2px 0 black)
-    }
-    #slogan{
-        text-align:none;
-        font-size:1rem;
+
+    
+    #slogan {
+        text-align: center;
+        font-size: 1rem;
     }
 }
+
 /* Responsive web design  Ends */
 /* .show Must have to written below the media  */
     .show{

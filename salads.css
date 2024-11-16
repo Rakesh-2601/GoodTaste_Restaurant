@@ -1,356 +1,394 @@
-*{
-    margin:0;
-    padding:0;
-}
-body{
-    background-image:url('images/salad bg.jpg'); 
-    padding-bottom:200px;
-    background-position:center;
-    background-size:cover;
-    background-attachment:fixed; 
-    height:350px;
-}
-nav{
-    display:flex;
-    align-items :center;
-    justify-content:space-between;
-    background-color:#00bd2c;
-    
-}
-.logo-div{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-} 
-.logo a{
-    display:flex;
-    cursor:pointer;
-}
-.menu-icon{
-    display:none;
-    cursor:pointer;
-}
-.menu-icon .fa-icon{
-    color:white;
-    padding-right:20px;
-    font-size:25px;
-}
-ul{
-    display:flex;
-    align-items:center;
-    justify-content:flex-end;
-}
-li a{
-    display:flex;
-    justify-content:space-around;
-    font-family:fantasy;
-    text-decoration:none;
-    color:white;
-    font-size:large;
-    letter-spacing:2px;
-    text-shadow:none;
-    margin-left:30px;
-    padding-right:20px;
-    animation:slideRight 4s ease forwards;
-}
-li a:hover{
-    filter:drop-shadow(4px 4px 1px black);
-}
-li a:active{
-    filter:none;
-}
-.reserve{
-    color:yellow;
-    text-shadow:none;
-    animation:slideTop 1s ease forwards;
-}
-.reserve:hover{
-    filter:drop-shadow(4px 4px 1px #000);
-}
-.reserve:active{
-    transform:scale(0.9);
-    filter:none;
-}
-#slogan{
-    word-spacing:10px;
-    font-family:georgia;
-    font-size:xx-large;
-    font-weight:800;
-    color:white;
-    padding:20px;
-    text-transform:capitalize;
-    line-height:40px;
-    text-align:center;
-    text-shadow:0 0 5px black;
-    animation:slideRight 1s ease forwards;
-    transition:.3s;
-    margin:90px 0;
-}
-.quotes{
-    width:30%;
-    padding:20px;
-    margin:0 auto;
-}
-#highlite{
-color:#00db2c;
-opacity:0;
-animation:slideLeft 0.7s ease forwards;
-}
-#highlite:hover{
-    text-shadow:0 0 10px white,0 0 10px white;
-}
-#order{
-text-align:center;
-margin-top:30px;
-opacity:0;
-animation:slideTop 3s ease forwards;
-
-}
- .Contents{
-    background-color:gainsboro;
-}
-#heading{
-font-family:lucida handwriting;
-font-size:50px;
-font-weight:900;
-text-align:center;
-color:#00db2c;
-margin-top:40px;
-}
-#order a{
-text-decoration:none;
-color:white;
-font-weight:100;
-font-size:15px;
-font-family:times new roman;
-border:1px solid #00db2c;
-padding:10px 30px 10px 30px;
-background-color: #00db2c;
-border-radius:20px;
-}
-#order a:hover{
-    opacity:1;
-    box-shadow:0 0 15px #00bd2c,0 0 15px #00bd2c;
-}
-img{
-background-position:center;
-background-size:cover;
-}
-#card{
-display:block;
-width:300px;
-height:500px;
-line-height:20px;
-border-right:1px solid #ddd;
-border-bottom:1px solid #ddd;
-margin:20px 0 20px 10px;
-background:linear-gradient(to bottom,silver,white);
-padding:30px 0 30px 0;
-overflow:auto;
-float:left;
-transition:all 0.50s ease-in-out;
-}
-#card:hover{
-box-shadow:5px 5px 5px rgba(0,0,0,0.4);
-}
-#img{
-display:flex;
-justify-content:center;
-padding-bottom:20px;
-filter: drop-shadow(0 0 10px rgba(0,0,0,0.4));
-}
-#img:hover{
-    animation:beat 2s linear infinite;
-}
-#head{
-text-align:center;
-font-weight:600;
-margin:0 0 20px 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-#ingredient{
-text-indent:10px;
-text-align:justify;
-padding: 5px 25px 20px 25px;
-line-height:25px;
+body {
+    background-image: url('images/salad bg.jpg');
+    padding-bottom: 200px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh; /* Ensure body takes full height */
 }
-@keyframes slideRight{
-    0%{
-        transform:translateX(-100px);
-        opacity:0.5;
-    }
-    100%{
-        transform:translateX(0px);
-        opacity:1;
-    }
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00bd2c;
 }
-@keyframes slideLeft{
-    0%{
-        transform:translateX(100px);
-        opacity:0;
-    }
-    100%{
-        transform:translateX(0px);
-        opacity:1;
-    }
+
+.logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-@keyframes slideTop{
-    0%{
-       transform:translateY(100px);
-        opacity:0;
-    }
-    50%{
-       transform:translateY(50px);
-        opacity:0;
-    }
-    100%{
-        transform:translateY(0px);
-        opacity:1;
-    }
+
+.logo a {
+    display: flex;
+    cursor: pointer;
 }
-@keyframes beat{
-    0%{
-    transform:scale(0.75);
-    opacity:0.5;
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon .fa-icon {
+    color: white;
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+li a {
+    display: flex;
+    justify-content: space-around;
+    font-family: fantasy;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    letter-spacing: 2px;
+    margin-left: 30px;
+    padding-right: 20px;
+    animation: slideRight 4s ease forwards;
+}
+
+li a:hover {
+    filter: drop-shadow(4px 4px 1px black);
+}
+
+li a:active {
+    filter: none;
+}
+
+.reserve {
+    color: yellow;
+    text-shadow: none;
+    animation: slideTop 1s ease forwards;
+}
+
+.reserve:hover {
+    filter: drop-shadow(4px 4px 1px #000);
+}
+
+.reserve:active {
+    transform: scale(0.9);
+    filter: none;
+}
+
+#slogan {
+    word-spacing: 10px;
+    font-family: georgia;
+    font-size: xx-large;
+    font-weight: 800;
+    color: white;
+    padding: 20px;
+    text-transform: capitalize;
+    line-height: 40px;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+    animation: slideRight 1s ease forwards;
+    transition: .3s;
+    margin: 90px 0;
+}
+
+.quotes {
+    width: 30%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#highlite {
+    color: #00db2c;
+    opacity: 0;
+    animation: slideLeft 0.7s ease forwards;
+}
+
+#highlite:hover {
+    text-shadow: 0 0 10px white, 0 0 10px white;
+}
+
+#order {
+    text-align: center;
+    margin-top: 30px;
+    opacity: 0;
+    animation: slideTop 3s ease forwards;
+}
+
+.Contents {
+    background-color: gainsboro;
+}
+
+#heading {
+    font-family: lucida handwriting;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    color: #00db2c;
+    margin-top: 40px;
+}
+
+#order a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+    font-family: times new roman;
+    border: 1px solid #00db2c;
+    padding: 10px 30px;
+    background-color: #00db2c;
+    border-radius: 20px;
+}
+
+#order a:hover {
+    opacity: 1;
+    box-shadow: 0 0 15px #00bd2c, 0 0 15px #00bd2c;
+}
+
+img {
+    background-position: center;
+    background-size: cover;
+}
+
+#card {
+    display: block;
+    width: 300px;
+    height: 500px;
+    line-height: 20px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 20px 0 20px 10px;
+    background: linear-gradient(to bottom, silver, white);
+    padding: 30px 0;
+    overflow: auto;
+    float: left;
+    transition: all 0.50s ease-in-out;
+}
+
+#card:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+#img {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
+}
+
+#img:hover {
+    animation: beat 2s linear infinite;
+}
+
+#head {
+    text-align: center;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+#ingredient {
+    text-indent: 10px;
+    text-align: justify;
+    padding: 5px 25px 20px 25px;
+    line-height: 25px;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0.5;
     }
-    50%{
-    transform:scale(1);
-    opacity:1;
-    }
-    100%{
-    transform:scale(0.75);
-    opacity:0.5;
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
     }
 }
 
-/* Responsive web design  Starts */
-@media (max-width:1000px) and (min-width:750px){
-    .menu-icon{
-        display:none;
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
     }
-    .menu-icon:active{
-        transform:scale(0.9);
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
     }
-    nav{
-        display:flex;
-        align-items :center;
-        justify-content:space-between;
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
     }
-    ul{
-        display:flex;
-        align-items:center;
+
+    50% {
+        transform: translateY(50px);
+        opacity: 0;
     }
-    li a{
-        padding:20px;
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
     }
-    .link{
-        display:flex;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(0.75);
+        opacity: 0.5;
     }
-    #logo{
-        display:block;
+
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.75);
+        opacity: 0.5;
+    }
+}
+
+/* Responsive web design Starts */
+
+/* Medium screens (1000px - 750px) */
+@media (max-width: 1000px) and (min-width: 750px) {
+    .menu-icon {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    li a {
+        padding: 20px;
+    }
+
+    .Contents {
+        background-color: gainsboro;
+        width: 100%;
+    }
+}
+
+/* Small screens (700px and below) */
+@media (max-width: 700px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link {
+        display: none;
+        padding-top: 20px;
+    }
+
+    li a {
+        animation: none;
+        font-size: 1.2rem;
+    }
+
+    li a:active {
+        transform: scale(0.9);
+    }
+
+    .reserve {
+        animation: none;
+    }
+
+    #order a {
+        display: block;
         text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 1rem;
     }
-    #logo #name{
-        display:block;
-    }
-    .contents{
-        background-color:gainsboro;
-        width:100%;
-    }
-}
-@media (max-width:700px){
-    .menu-icon{
-        display:block;
-    }
-    .menu-icon:active{
-        transform:scale(0.9);
-    }
-    nav{
-        display:block;
-        padding-bottom:20px;
-    }
-    ul{
-        flex-direction:column;
-    }
-    .link{
-        display:none;
-        padding-top:20px;
-    }
-    li a{
-        animation:none;
-    }
-    li a:active{
-        transform:scale(0.9);
-    }
-    .reserve{
-        animation:none;
-    }
-    #order a{
-        display:block;
-        text-align:center;
-        width:20%;
-        margin:0 auto;
-        padding:3px 15px;
-    }
-    #order a:active{
-        transform:scale(0.9);
-    }
-}
-@media (max-width:450px){
-    .menu-icon{
-        display:block;
-    }
-    .menu-icon:active{
-        transform:scale(0.9);
-    }
-    nav{
-        display:block;
-        padding-bottom:20px;
-    }
-    ul{
-        flex-direction:column;
-    }
-    .link{
-        display:none;
-        padding-top:20px;
-    }
-    li a{
-        animation:none;
-    }
-    li a:active{
-        transform:scale(0.9);
-    }
-    .reserve{
-        animation:none;
-    }
-    #order a{
-        display:block;
-        text-align:center;
-        width:20%;
-        margin:0 auto;
-        padding:3px 15px;
-    }
-    #order a:active{
-        transform:scale(0.9);
-    }
-    .contents{
-        height:700px;
+
+    #order a:active {
+        transform: scale(0.9);
     }
 }
 
-/* Responsive web design  Ends */
-/* .show Must have to written below the media  */
-.show{
-    display:block;
+/* Extra small screens (450px and below) */
+@media (max-width: 450px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li a {
+        animation: none;
+        font-size: 1rem;
+    }
+
+    li a:active {
+        transform: scale(0.9);
+    }
+
+    .reserve {
+        animation: none;
+    }
+
+    #order a {
+        display: block;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    #order a:active {
+        transform: scale(0.9);
+    }
+
+    .Contents {
+        height: auto;
+    }
 }
-.hidden{
-    opacity:0;
-    filter:blur(5px);
-    transform:translateY(50px);
-    transition:all 2s ease;
+
+/* Show Menu Links When Toggled */
+.show {
+    display: block;
 }
-.reveal{
-    opacity:1;
-    filter:blur(0);
-    transform:translateY(0);
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(50px);
+    transition: all 2s ease;
+}
+
+.reveal {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
 }
